@@ -5,21 +5,20 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
     int numero;
 
 // Coletando resultado    
 
-    printf ("Informe um número: ");
+    printf ("Informe um nÃºmero: ");
     scanf ("%d", &numero);
 
 // Tela de resultado
 
     if (numero % 2 == 0) {
-        printf ("O valor é par");
-    }
-    else {
-        printf ("O valor é impar");
+        printf ("O valor Ã© par");
+    } else {
+        printf ("O valor Ã© impar");
     }
 
 return 0;
