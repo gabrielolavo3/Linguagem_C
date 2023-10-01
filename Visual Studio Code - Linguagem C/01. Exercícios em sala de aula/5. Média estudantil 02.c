@@ -6,7 +6,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declarando variáveis
+// Declarando variÃ¡veis
 
     char nome [250];
     int idade;
@@ -22,11 +22,11 @@ int main () {
     gets (nome);
     printf ("Informe a sua idade, %s: ", nome);
     scanf ("%d", &idade);
-    printf ("Informe a 1º nota: ");
+    printf ("Informe a 1Âº nota: ");
     scanf ("%f", &primeiranota);
-    printf ("Informe a 2º nota: ");
+    printf ("Informe a 2Âº nota: ");
     scanf ("%f", &segundanota);
-    printf ("Informe a 3º nota: ");
+    printf ("Informe a 3Âº nota: ");
     scanf ("%f", &terceiranota);
 
 // Limpando terminal e calculando a mÃ©dia
@@ -38,12 +38,12 @@ media = (primeiranota + segundanota + terceiranota) / 3;
 
     printf ("Nome do aluno: %s \n", nome);
     printf ("Idade do aluno: %d \n", idade);
-    printf ("1º nota do aluno: %.2f \n", primeiranota);
-    printf ("2º nota do aluno: %.2f \n", segundanota);
-    printf ("3º nota do aluno: %.2f \n", terceiranota);
-    printf ("Média final do aluno: %.2f \n\n", media);
+    printf ("1Âº nota do aluno: %.2f \n", primeiranota);
+    printf ("2Âº nota do aluno: %.2f \n", segundanota);
+    printf ("3Âº nota do aluno: %.2f \n", terceiranota);
+    printf ("MÃ©dia final do aluno: %.2f \n\n", media);
 
-// Validação
+// ValidaÃ§Ã£o
 
 if (media < 7) {
     strcpy (situacao, "Reprovado!");
