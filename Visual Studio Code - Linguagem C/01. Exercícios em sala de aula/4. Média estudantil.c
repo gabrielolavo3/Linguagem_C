@@ -6,7 +6,7 @@
 int main () {
     setlocale(LC_ALL, "portuguese"); 
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
     float notaA;
     float notaB;
     float media;
@@ -27,9 +27,9 @@ media = (notaA + notaB) / 2;
 // Tela de resultado
     printf ("Nota 01: %.2f \n", notaA);
     printf ("Nota 02: %.2f \n", notaB);
-    printf ("Média: %.2f \n", media);
+    printf ("MÃ©dia: %.2f \n", media);
 
-// Comando SE SENÃO para a situação do aluno
+// Comando SE SENÃƒO para a situaÃ§Ã£o do aluno
 
 if (media >= 7) {
     printf ("Aprovado!");
