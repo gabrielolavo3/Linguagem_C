@@ -41,7 +41,7 @@ if (primeiroProduto < segundoProduto && primeiroProduto < terceiroProduto) {
 } else { if (segundoProduto < primeiroProduto && segundoProduto < terceiroProduto) {
     printf ("Escolha final: O 2º produto deve ser adquirido"); } 
     
-else { (terceiroProduto < segundoProduto && terceiroProduto < primeiroProduto); 
+else { (terceiroProduto < segundoProduto && terceiroProduto < primeiroProduto) 
     printf ("Escolha final: O 3º produto deve ser adquirido"); }
 
 }
