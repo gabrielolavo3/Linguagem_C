@@ -29,21 +29,19 @@ system ("cls || clear");
 // Tela de resultado
 
     printf ("ESCOLHA DO PRODUTO MAIS BARATO! \n\n");
-    printf ("Valor do 1º produto: %.2f R$ \n", primeiroProduto);
-    printf ("Valor do 2º produto: %.2f R$ \n", segundoProduto);
-    printf ("Valor do 3º produto: %.2f R$ \n\n", terceiroProduto);
+    printf ("Valor do 1º produto: R$ %.2f \n", primeiroProduto);
+    printf ("Valor do 2º produto: R$ %.2f \n", segundoProduto);
+    printf ("Valor do 3º produto: R$ %.2f \n\n", terceiroProduto);
 
 // Escolhendo qual produto comprar
 
-if (primeiroProduto < segundoProduto && primeiroProduto < terceiroProduto) {
-    printf ("Escolha final: O 1º produto deve ser adquirido");
+    if (primeiroProduto < segundoProduto && primeiroProduto < terceiroProduto) {
+        printf ("Escolha final: O 1º produto deve ser adquirido");
+    } else if (segundoProduto < primeiroProduto && segundoProduto < terceiroProduto) {
+        printf ("Escolha final: O 2º produto deve ser adquirido");  
+    } else { 
+        printf ("Escolha final: O 3º produto deve ser adquirido"); 
+    }
 
-} else { if (segundoProduto < primeiroProduto && segundoProduto < terceiroProduto) {
-    printf ("Escolha final: O 2º produto deve ser adquirido"); } 
-    
-else { (terceiroProduto < segundoProduto && terceiroProduto < primeiroProduto);
-    printf ("Escolha final: O 3º produto deve ser adquirido"); }
-
-}
     return 0;
-}  
+} 
