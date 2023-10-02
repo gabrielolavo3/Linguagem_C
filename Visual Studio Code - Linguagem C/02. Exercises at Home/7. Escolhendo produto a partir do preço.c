@@ -1,7 +1,7 @@
 /* 
-Descrição   : Analisar o preço de 3 produtos e optar em comprar aquele com menor preço! (função)
-Autor(a)    : Gabriel S. Olavo
-Data atual  : 02/10/2023
+Descrição  : Analisar o preço de 3 produtos e optar em comprar aquele com menor preço! (função)
+Autor(a)   : Gabriel S. Olavo
+Data atual : 02/10/2023 
 */
 
 #include <stdio.h>
@@ -27,6 +27,7 @@ int main () {
 system ("cls || clear");
 
 // Tela de resultado
+
     printf ("ESCOLHA DO PRODUTO MAIS BARATO! \n\n");
     printf ("Valor do 1º produto: %.2f R$ \n", primeiroProduto);
     printf ("Valor do 2º produto: %.2f R$ \n", segundoProduto);
