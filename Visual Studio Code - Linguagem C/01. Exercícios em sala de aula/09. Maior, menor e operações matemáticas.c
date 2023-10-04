@@ -1,5 +1,5 @@
 /* 
-Descrição  : Ler 2 números, aplicar operações e identificar quais dos 2 é o maior e o menor valor ! (função)
+DescriÃ§Ã£o  : Ler 2 nÃºmeros, aplicar operaÃ§Ãµes e identificar quais dos 2 Ã© o maior e o menor valor ! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/10/2023 */
 
@@ -10,19 +10,19 @@ Data atual : 02/10/2023 */
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int primeiroNumero, segundoNumero, soma, multiplicacao;
     float media;
 
 // Solicitando dados
 
-    printf ("Informe o 1º número: ");
+    printf ("Informe o 1Âº nÃºmero: ");
     scanf ("%i", &primeiroNumero);
-    printf ("Informe o 2º número: ");
+    printf ("Informe o 2Âº nÃºmero: ");
     scanf ("%i", &segundoNumero);
 
-// Cálculo de soma, média, multiplicação e limpando o terminal
+// CÃ¡lculo de soma, mÃ©dia, multiplicaÃ§Ã£o e limpando o terminal
 
 soma = primeiroNumero + segundoNumero;
 media = soma /  2.0; 
@@ -32,13 +32,13 @@ system ("cls || clear");
 
 // Tela de resultado
 
-    printf ("RESUMO DOS DADOS INSERIDOS E OPERAÇÕES \n\n");;
-    printf ("1º número informado: %.0i \n", primeiroNumero);
-    printf ("2º número informado: %.0i \n\n", segundoNumero);
-    printf ("Operações básicas e maior e menor valor \n\n");
+    printf ("RESUMO DOS DADOS INSERIDOS E OPERAÃ‡Ã•ES \n\n");;
+    printf ("1Âº nÃºmero informado: %.0i \n", primeiroNumero);
+    printf ("2Âº nÃºmero informado: %.0i \n\n", segundoNumero);
+    printf ("OperaÃ§Ãµes bÃ¡sicas e maior e menor valor \n\n");
     printf ("Soma dos valores: %i \n", soma);
-    printf ("Multiplicação dos valores: %i \n", multiplicacao);
-    printf ("Média dos valores: %.2f \n\n", media);
+    printf ("MultiplicaÃ§Ã£o dos valores: %i \n", multiplicacao);
+    printf ("MÃ©dia dos valores: %.2f \n\n", media);
 
 // Exibindo o maior e o menor valor
 
@@ -50,7 +50,7 @@ system ("cls || clear");
         printf ("Menor valor: %i \n", primeiroNumero);
     }
 
-    /* Operação ternária - Alternativa ao IF ElSE (Códigos Pequenos)
+    /* OperaÃ§Ã£o ternÃ¡ria - Alternativa ao IF ElSE (CÃ³digos Pequenos)
 
     maior = primeiroNumero > segundoNumero ? primeiroNumero : segundoNumero;
     menor = primeiroNumero < segundoNumero ? primeiroNumero : segundoNumero; */
