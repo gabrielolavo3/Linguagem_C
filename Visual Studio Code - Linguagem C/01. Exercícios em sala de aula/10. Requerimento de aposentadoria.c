@@ -1,5 +1,5 @@
 /* 
-DescriÁ„o  : Analisar a necessidade de requerer a aposentadoria com base na idade e no tempo de trabalho! (funÁ„o)
+Descri√ß√£o  : Analisar a necessidade de requerer a aposentadoria com base na idade e no tempo de trabalho! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/10/2023 */
 
@@ -11,7 +11,7 @@ Data atual : 02/10/2023 */
 int main () {
     setlocale (LC_ALL,"portuguese");
     
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
 char codigo [250];
 char resultado [250];
@@ -20,8 +20,8 @@ int anodeNascimento, tempodeTrabalho, idade;
 // Solicitando dados
 
     printf ("INSTITUTO NACIONAL DE SEGURO SOCIAL!\n");
-    printf ("Consulta o seu requerimento para a aposentadoria\n\n");
-    printf ("Insira o n∫ do CÛdidgo do Empregado: ");
+    printf ("Consulte o seu requerimento para a aposentadoria\n\n");
+    printf ("Insira o n¬∫ do C√≥didgo do Empregado: ");
     fgets (codigo, 250, stdin);
     codigo [strcspn (codigo, "\n")] = 0;
     printf ("Insira o seu ano de nascimento: ");
@@ -36,16 +36,16 @@ idade = 2023 - anodeNascimento;
 // Verificando a necessidade do requerimento de aposentadoria
 
     if (idade >= 65 || tempodeTrabalho >= 30 ) {
-        strcpy (resultado, "RequesiÁ„o necess·ria!");
+        strcpy (resultado, "Requesi√ß√£o necess√°ria!");
     } else {
-        strcpy (resultado, "RequesiÁ„o n„o È necess·ria!"); }
+        strcpy (resultado, "Requesi√ß√£o n√£o √© necess√°ria!"); }
 
 system ("cls");
 
 // Tela de resultado
 
     printf ("INSTITUTO NACIONAL DE SEGURO SOCIAL! - Resumo da Consulta\n\n");
-    printf ("CÛdigo do Empregado: %s \n", codigo);
+    printf ("C√≥digo do Empregado: %s \n", codigo);
     printf ("Ano de nascimento: %d \n", anodeNascimento);
     printf ("Idade atual ou aproximada: %d anos \n", idade);
     printf ("Tempo de trabalho: %d anos \n\n", tempodeTrabalho);
