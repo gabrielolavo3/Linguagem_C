@@ -6,54 +6,55 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int codigo;
-    char resultado [250];
-    char valor [250];
+    char prato [250];
+    float valor;
 
 // Solicitando dados
 
-    printf ("------------- | Restaurante Pizza Planet | -------------\n");
-    printf ("------------------ | Cadárpio do Dia | ------------------\n\n");
-    printf ("( ) Códico 01 - Picanha\n");
-    printf ("( ) Códico 02 - Lasanha\n");
-    printf ("( ) Códico 03 - Strogonoff\n");
-    printf ("( ) Códico 04 - Bife acebolado\n");
-    printf ("( ) Códico 05 - Pão com ovo\n\n");
-    printf ("Informe o número do código para selecionar seu prato: ");
+    printf ("------------- | Restaurante Pizza Planet | -------------\n\n");
+    printf ("------------------ | CadÃ¡rpio do Dia | ------------------\n\n");
+    printf ("Codigo \tPrato \t\tPreco \n"); // \t equivale a tab
+    printf ("01 \tPicanha \tR$ 25,00 \n");
+    printf ("02 \tLasanha \tR$ 20,00 \n");
+    printf ("03 \tStrogonoff \tR$ 18,00 \n");
+    printf ("04 \tBife acebolado \tR$ 15,00 \n");
+    printf ("05 \tPÃ£o com ovo \tR$ 5,00 \n\n");
+    printf ("Informe o nÃºmero do cÃ³digo para selecionar seu prato: ");
     scanf ("%d", &codigo);
 
 // Validando a escolha
 
 switch (codigo) {
 case 1:
-    strcpy (resultado, "Picanha");
-    strcpy (valor, "R$ 25,00");
+    strcpy (prato, "Picanha");
+    valor = 25.00;
 break;
 
 case 2:
-    strcpy (resultado, "Lasanha");
-    strcpy (valor, "R$ 20,00");
+    strcpy (prato, "Lasanha");
+    valor = 20.00;
 break;
 
 case 3:
-    strcpy (resultado, "Strogonoff");
-    strcpy (valor, "R$ 18,00");
+    strcpy (prato, "Strogonoff");
+    valor = 18.00;
 break;
 
 case 4:
-    strcpy (resultado, "Bife acebolado");
-    strcpy (valor, "R$ 15,00");
+    strcpy (prato, "Bife acebolado");
+    valor = 15.00;
 break;
 
 case 5:
-    strcpy (resultado, "Pão com ovo");
-    strcpy (valor, "R$ 5,00");
+    strcpy (prato, "PÃ£o com ovo");
+    valor = 5.00;
 break;
 
 default: 
-    printf ("Opção selecionada é inválida!");
+    printf ("OpÃ§Ã£o selecionada invÃ¡lida!");
 break; }
 
 system ("cls");
@@ -61,9 +62,9 @@ system ("cls");
 // Tela de resultado
 
     printf ("RESTAURANTE PIZZA PLANET!\n\n");
-    printf ("Número do código: %i\n", codigo);
-    printf ("Nome do prato: %s\n", resultado);
-    printf ("Valor do prato: %s\n", valor);
+    printf ("NÃºmero do cÃ³digo: %i\n", codigo);
+    printf ("Nome do prato: %s\n", prato);
+    printf ("Valor do prato: %.2f\n", valor);
 
     return 0;
 }
