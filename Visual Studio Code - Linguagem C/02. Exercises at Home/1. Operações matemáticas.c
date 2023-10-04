@@ -1,22 +1,22 @@
-#include <stdio.h>
+include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     float primeironumero, segundonumero, soma, subtracao, multiplicacao, divisao;
 
 // Solicitando dados
 
-    printf ("Informe o 1º número: ");
+    printf ("Informe o 1Âº nÃºmero: ");
     scanf ("%f", &primeironumero);
-    printf ("Informe o 2º número: ");
+    printf ("Informe o 2Âº nÃºmero: ");
     scanf ("%f", &segundonumero);
 
-// Operações básicas
+// OperaÃ§Ãµes bÃ¡sicas
 
 soma = primeironumero + segundonumero;
 subtracao = primeironumero - segundonumero;
@@ -27,12 +27,12 @@ system ("cls || clear");
 
 // Tela de resultado
 
-    printf ("1º número: %.2f \n", primeironumero);
-    printf ("2º número: %.2f \n\n", segundonumero);
-    printf ("Soma dos números: %.2f \n", soma);
-    printf ("Subtração dos números: %.2f \n", subtracao);
-    printf ("Multiplição dos números: %.2f \n", multiplicacao);
-    printf ("Divisão dos números: %.2f \n", divisao);
+    printf ("1Âº nÃºmero: %.2f \n", primeironumero);
+    printf ("2Âº nÃºmero: %.2f \n\n", segundonumero);
+    printf ("Soma dos nÃºmeros: %.2f \n", soma);
+    printf ("SubtraÃ§Ã£o dos nÃºmeros: %.2f \n", subtracao);
+    printf ("MultipliÃ§Ã£o dos nÃºmeros: %.2f \n", multiplicacao);
+    printf ("DivisÃ£o dos nÃºmeros: %.2f \n", divisao);
     
     return 0;
 }
