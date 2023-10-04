@@ -6,7 +6,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
     
     int idade;
 
@@ -19,15 +19,15 @@ system ("cls || clear");
 
 // Tela de resultado
 
-    printf ("VERIFICAÇÃO DE OBRIGATORIEDADE DE VOTO!\n\n");
+    printf ("VERIFICAÃ‡ÃƒO DE OBRIGATORIEDADE DE VOTO!\n\n");
     printf ("Idade informada: %d", idade);
 
 // Verificando obrigatoriedade do voto
 
     if (idade >= 18 && idade <= 65) {
-        printf ("\nResultado Final: Seu voto é obrigatório");
+        printf ("\nResultado Final: Seu voto Ã© obrigatÃ³rio");
     } else {
-        printf ("\nResultado Final: Seu voto é facultativo");
+        printf ("\nResultado Final: Seu voto Ã© facultativo");
     }
 
     return 0;
