@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-//Declarando variáveis
+//Declarando variÃ¡veis
     
     float numero;
 
@@ -14,12 +14,12 @@ int main () {
     printf ("Digite um valor: ");
     scanf ("%f", &numero );
 
-// Verificando se é positivo ou negativo
+// Verificando se Ã© positivo ou negativo
 
     if (numero >= 0) {
-        printf ("Esse número é positivo");
+        printf ("Esse nÃºmero Ã© positivo");
     } else {
-        printf ("Esse número é negativo"); }
+        printf ("Esse nÃºmero Ã© negativo"); }
     
     return 0;
 
