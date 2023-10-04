@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclarÁ„o de vari·veis
+// Declar√ß√£o de vari√°veis
 
     char letra;
 
@@ -18,9 +18,9 @@ int main () {
 // Verificando a letra
 
 if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
-    printf ("\nResultado: Essa letra È uma vogal");
+    printf ("\nResultado: Essa letra √© uma vogal");
 } else {
-    printf ("\nResultado: Essa letra È uma consoante"); }
+    printf ("\nResultado: Essa letra √© uma consoante"); }
 
     return 0;
 
