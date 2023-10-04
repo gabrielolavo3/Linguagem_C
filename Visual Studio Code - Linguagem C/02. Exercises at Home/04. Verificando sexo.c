@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     char sexo;
     char nome [250];
@@ -23,7 +23,7 @@ fflush (stdin);
     printf ("Informe a primeira letra do seu sexo: ");
     scanf ("%c", &sexo);
     
-// Convertendo de min˙scula para mai˙scula e limpando o terminal
+// Convertendo de min√∫scula para mai√∫scula e limpando o terminal
 
 if (sexo == 'f') {
     sexo = 'F'; }
@@ -35,8 +35,8 @@ system ("cls || clear");
 
 // Tela de resultado
 
-    printf ("Nome do usu·rio: %s \n", nome);
-    printf ("Idade do usu·rio: %d \n", idade);
+    printf ("Nome do usu√°rio: %s \n", nome);
+    printf ("Idade do usu√°rio: %d \n", idade);
 
 // Verificando o sexo
 
@@ -46,7 +46,7 @@ if (sexo == 'F') {
 } else { if (sexo == 'M') {
     printf ("Sexo informado: Masculno"); }
 else {
-    printf ("Sexo informado È inv·lido"); }
+    printf ("Sexo informado √© inv√°lido"); }
 
 }
  
