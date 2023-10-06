@@ -1,7 +1,7 @@
 /* 
-DescriÁ„o  : Calcular o valor do novo sal·rio e imprimir o percentual de acrÈscimo, o valor do acrÈscimo e o novo sal·rio! (funÁ„o)
+Descri√ß√£o  : Calcular o valor do novo sal√°rio e imprimir o percentual de acr√©scimo, o valor do acr√©scimo e o novo sal√°rio! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
-Data atual : 04/10/2023 */
+Data atual : 06/10/2023 */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,18 +11,18 @@ Data atual : 04/10/2023 */
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     float salario, acrescimo, percentual, novoSalario;
 
 // Solicitando dados
 
     printf ("SALARY COMPUTATION! \n");
-    printf ("Consulte o seu aumento de sal·rio! \n\n");
-    printf ("Digite o valor atual do seu sal·rio: ");
+    printf ("Consulte o seu aumento de sal√°rio! \n\n");
+    printf ("Digite o valor atual do seu sal√°rio: ");
     scanf ("%f", &salario);
 
-// Aplicando acrÈscimo de sal·rio
+// Aplicando acr√©scimo de sal√°rio
 
 if (salario <= 280.00) {
     percentual = 20;
@@ -49,10 +49,10 @@ system ("cls || clear");
 // Tela de resultado 
 
     printf ("SALARY COMPUTATION! - Resultado da Consulta. \n\n");
-    printf ("Sal·rio antes do reajuste: R$ %.2f \n", salario);
-    printf ("Percentual de acrÈscimo: %.0f%% \n", percentual);
-    printf ("Valor de acrÈscimo: R$ %.2f \n\n", acrescimo);
-    printf ("Novo sal·rio: R$ %.2f \n", novoSalario);
+    printf ("Sal√°rio antes do reajuste: R$ %.2f \n", salario);
+    printf ("Percentual de acr√©scimo: %.0f%% \n", percentual);
+    printf ("Valor de acr√©scimo: R$ %.2f \n\n", acrescimo);
+    printf ("Novo sal√°rio: R$ %.2f \n", novoSalario);
     
     return 0;
 }
