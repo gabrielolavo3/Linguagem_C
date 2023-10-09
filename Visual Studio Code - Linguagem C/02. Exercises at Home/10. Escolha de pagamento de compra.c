@@ -51,8 +51,16 @@ strcpy (formadePagamento, "à vista");
 break;
     
 case '2':
+
+do {
     printf ("Informe a quantidade de percelas: ");
     scanf ("%d", &parcela);
+    
+    if (parcela > 6) {
+    printf ("\nO parcelemento pode ser feito em até 06 parcelas.\n");
+    printf ("Informe a quantidade de percelas novamente: "); }
+
+} while (parcela > 6);
 
 // Limpando o terminal e atribuindo nome a variável    
 system ("cls || clear");
