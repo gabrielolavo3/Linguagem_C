@@ -1,5 +1,6 @@
 /* 
-DescriÁ„o  : Calcular o peso ideal (em Kgs) com base no sexo e altura do usu·rio! (funÁ„o)
+Descri√ß√£o  : Calcular o peso ideal (em Kgs) com base no sexo e altura do usu√°rio! (fun√ß√£o)
+Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
 Data atual : 06/10/2023 */
 
@@ -11,7 +12,7 @@ Data atual : 06/10/2023 */
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     char sexo;
     char sexoReal [250];
@@ -38,7 +39,7 @@ if (sexo == 'm') {
 
 system ("cls || clear");
 
-// Analisando o sexo e aplicando a fÛrmula
+// Analisando o sexo e aplicando a f√≥rmula
 
 switch (sexo) {
     case 'M':
@@ -52,7 +53,7 @@ switch (sexo) {
     break;
 
 default:
-    printf ("Sexo informado È inv·lido!");
+    printf ("Sexo informado √© inv√°lido!");
     break; }
 
 // Tela de resultado
