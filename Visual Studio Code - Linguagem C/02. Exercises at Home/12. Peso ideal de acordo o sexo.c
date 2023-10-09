@@ -8,6 +8,7 @@ Data atual : 06/10/2023 */
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
+#include <ctype.h>
 
 int main () {
     setlocale (LC_ALL, "portuguese");
@@ -31,11 +32,14 @@ int main () {
 
 // Convertendo de minuscula para maiuscula e limpando o terminal
 
-if (sexo == 'm') {
+/* if (sexo == 'm') {
     sexo = 'M'; 
 
 } else if (sexo == 'f') {
-    sexo = 'F'; }
+    sexo = 'F'; } */
+
+// Comando do Ctype = Converte de minuscula para maiuscula
+    sexo = toupper (sexo);
 
 system ("cls || clear");
 
