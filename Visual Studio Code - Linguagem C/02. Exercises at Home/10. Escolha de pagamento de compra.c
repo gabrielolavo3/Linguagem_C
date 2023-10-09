@@ -1,5 +1,6 @@
 /* 
 Descrição  : Aplicar desconto ou parcelamento de compra com base na forma de pagamento! (função)
+Professor  : Carlos Anderson Santos de Jesus 
 Autor(a)   : Gabriel S. Olavo
 Data atual : 06/10/2023 */
 
