@@ -5,7 +5,7 @@
 int main (){
     setlocale (LC_ALL, "portuguese");
     
-// Declarando vari veis
+// Declarando variÂ veis
 
     int a, numero;
 
