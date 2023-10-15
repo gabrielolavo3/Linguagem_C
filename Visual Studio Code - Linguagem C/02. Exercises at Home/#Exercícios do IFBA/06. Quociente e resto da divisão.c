@@ -1,3 +1,8 @@
+/* 
+DescriÃ§Ã£o  : Ler 2 nÃºmeros inteiros e imprimir o quociente  e o resto da divisÃ£o ! (funÃ§Ã£o)
+Autor(a)   : Gabriel S. Olavo
+Data atual : 16/10/2023 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -5,20 +10,20 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int primeiroNumero, segundoNumero;
     float quociente, restodaDivisao;
 
 // Solicitando dados
 
-    printf ("MINI CALCULADORA DE DIVISÃO!\n\n");
-    printf ("Insira o 1º número: ");
+    printf ("MINI CALCULADORA DE DIVISÃƒO!\n\n");
+    printf ("Insira o 1Âº nÃºmero: ");
     scanf ("%d", &primeiroNumero);
-    printf ("Insira o 2º número: ");
+    printf ("Insira o 2Âº nÃºmero: ");
     scanf ("%d", &segundoNumero);
 
-// Calculando o quociente e o resto da divisão
+// Calculando o quociente e o resto da divisÃ£o
 
 quociente = primeiroNumero / segundoNumero;
 restodaDivisao = primeiroNumero % segundoNumero;
@@ -26,11 +31,11 @@ system ("cls || clear");
 
 // Tela de resultado
 
-    printf ("MINI CALCULADORA DE DIVISÃO!\n\n");
-    printf ("1º número: %.0d\n", primeiroNumero);
-    printf ("2º número: %.0d\n", segundoNumero);
-    printf ("Quociente da divisão: %.0f\n", quociente);
-    printf ("Resto da divisão: %.0f\n", restodaDivisao);
+    printf ("MINI CALCULADORA DE DIVISÃƒO!\n\n");
+    printf ("1Âº nÃºmero: %.0d\n", primeiroNumero);
+    printf ("2Âº nÃºmero: %.0d\n", segundoNumero);
+    printf ("Quociente da divisÃ£o: %.0f\n", quociente);
+    printf ("Resto da divisÃ£o: %.0f\n", restodaDivisao);
 
     return 0;
 }
