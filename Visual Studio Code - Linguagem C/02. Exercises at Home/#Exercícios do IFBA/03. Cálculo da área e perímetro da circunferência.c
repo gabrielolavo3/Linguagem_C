@@ -1,5 +1,5 @@
 /* 
-DescriÁ„o  : Calcular a ·rea e o perÌmetro da circunferÍncia a partir do valor do raio! (funÁ„o)
+Descri√ß√£o  : Calcular a √°rea e o per√≠metro da circunfer√™ncia a partir do valor do raio! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 14/10/2023 */
 
@@ -10,31 +10,31 @@ Data atual : 14/10/2023 */
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     float raio, area, perimetro;
 
 // Solicitando dados
 
-    printf ("CALCULADORA DE ¡REA E PERÕMETRO DA CIRCUNFER NCIA!\n\n");
-    printf ("Informe o valor do raio da circunferÍncia: ");
+    printf ("CALCULADORA DE √ÅREA E PER√çMETRO DA CIRCUNFER√äNCIA!\n\n");
+    printf ("Informe o valor do raio da circunfer√™ncia: ");
     scanf ("%f", &raio);
 
-// Calculando a ·rea, o perÌmetro e limpando o terminal
+// Calculando a √°rea, o per√≠metro e limpando o terminal
 
-area = 2 * 3.14 * (raio *raio);
+area = 2 * 3.14 * (raio * raio);
 perimetro = 2 * 3.14 * raio;
 
 system ("cls");
 
 // Tela de resultado
 
-    printf ("CALCULADORA DE ¡REA E PERÕMETRO DA CIRCUNFER NCIA!\n");
+    printf ("CALCULADORA DE √ÅREA E PER√çMETRO DA CIRCUNFER√äNCIA!\n");
     printf ("Resumo dos calculos\n\n");
-    printf ("Raio da circunferÍncia: %.2f Cm\n\n", raio);
-    printf ("Resultado da ·rea e do perÌmetro\n\n");
-    printf ("¡rea da circunferÍncia: %.2f Cm\n", area);
-    printf ("PerÌmetro da circunferÍncia: %.2f Cm\n", perimetro);
+    printf ("Raio da circunfer√™ncia: %.2f Cm\n\n", raio);
+    printf ("Resultado da √°rea e do per√≠metro\n\n");
+    printf ("√Årea da circunfer√™ncia: %.2f Cm\n", area);
+    printf ("Per√≠metro da circunfer√™ncia: %.2f Cm\n", perimetro);
     
     return 0;
 }
