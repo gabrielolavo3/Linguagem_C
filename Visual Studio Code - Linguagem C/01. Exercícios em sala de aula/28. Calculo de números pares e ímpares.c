@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a = 0, numero, par = 0, impar = 0;
     float mediaGeral, mediadePar, somaTotal = 0, somadePar = 0; 
@@ -13,7 +13,7 @@ int main () {
 // Solicitando dados
 
 do {
-    printf ("Digite o %dº valor: ", a + 1);
+    printf ("Digite o %dÂº valor: ", a + 1);
     scanf ("%d", &numero);
     
     if  (numero > 0) {
@@ -30,15 +30,15 @@ do {
 
 } while (numero != 0);
 
-mediadePar = somadePar / a;
-mediaGeral = somaTotal / a;
+mediadePar = somadePar / (float) par; // 2 = 2.0
+mediaGeral = somaTotal / (float) a;
 
 // Tela de resultado
 
     printf ("Quantidade de pares %d \n", par);
-    printf ("Quantidade de ímpares %d \n", impar);
-    printf ("Média de números pares: %.2f \n", mediadePar);
-    printf ("Média geral de números: %.2f \n", mediaGeral);
+    printf ("Quantidade de Ã­mpares %d \n", impar);
+    printf ("MÃ©dia de nÃºmeros pares: %.2f \n", mediadePar);
+    printf ("MÃ©dia geral de nÃºmeros: %.2f \n", mediaGeral);
 
     return 0;
 }
