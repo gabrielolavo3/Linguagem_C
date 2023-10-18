@@ -64,9 +64,9 @@ do {
     printf ("Informe a idade do(a) entrevistado(a): ");
     scanf ("%d", &idade);
 
-    if (idade < maiorIdade || idade > menorIdade) {
+    if (idade < 0 || idade > 120) {
     printf ("\nA idade dos entrevistados é LIMITADA entre %d e %d anos! Digite a idade novamente \n", maiorIdade, menorIdade); }  
-} while (idade < maiorIdade || idade > menorIdade);
+} while (idade < 0 || idade > 120);
 
     printf ("Informe o salário do(a) entrevistado(a): ");
     scanf ("%f", &salario);
