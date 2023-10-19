@@ -91,7 +91,7 @@ case 2:
 system ("cls || clear");
 mediaSalarial = (float) somadeSalario / (float) entrevistado;
 
-    printf ("INSTITUTO DE ESTATÍSTICA NACIONAL (IEN)\nRESULTADOS PESQUISA POPULACIONAL \n\n");
+    printf ("INSTITUTO DE ESTATÍSTICA NACIONAL (IEN)\nRESULTADOS DA PESQUISA POPULACIONAL \n\n");
     printf ("Quantidade de entrevistados: %d \n", entrevistado);
     printf ("Maior idade entre os entrevistados: %d \n", maiorIdade);
     printf ("Menor idade entre os entrevistados: %d \n", menorIdade);
