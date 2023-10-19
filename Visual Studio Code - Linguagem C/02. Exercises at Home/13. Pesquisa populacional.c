@@ -90,7 +90,7 @@ case 2:
 
 system ("cls || clear");
 mediaSalarial = (float) somadeSalario / (float) entrevistado;
-
+if(entrevistado > 0) {
     printf ("INSTITUTO DE ESTATÍSTICA NACIONAL (IEN)\nRESULTADOS DA PESQUISA POPULACIONAL \n\n");
     printf ("Quantidade de entrevistados: %d \n", entrevistado);
     printf ("Maior idade entre os entrevistados: %d \n", maiorIdade);
@@ -98,7 +98,10 @@ mediaSalarial = (float) somadeSalario / (float) entrevistado;
     printf ("Mulheres com salário acima de R$ 5000,00: %d \n", quantidadeDeMulheres);
     printf ("Média salarial: %.2f \n", mediaSalarial);
     break;
-       
+} else {
+    opcao = 1;
+    break;
+}
 default:
 system ("cls || clear");
     printf ("OPÇÃO SELECIONDA É INVÁLIDA! Retorne à tela de ações. \n\n");
