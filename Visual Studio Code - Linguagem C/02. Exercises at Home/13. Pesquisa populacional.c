@@ -9,6 +9,7 @@ Data atual : 16/10/2023 */
 #include <stdlib.h>
 #include <ctype.h>
 #include <locale.h>
+#include <time.h> // Permite usar a função Sleep
 
 int main () {
     setlocale (LC_ALL, "portuguese");
@@ -34,6 +35,8 @@ case 1:
     printf ("Informe a quantidade de entrevistados: ");
     scanf ("%d", &entrevistado);
 
+// Inserindo as perguntas sobre sexo, idade e salário em Loop de acordo com a quantidade de entrevistados
+
 for (a = 1; a <= entrevistado; a++) {
 
 // Definindo o título conforme a quantidade de entrevistados
@@ -48,15 +51,23 @@ if (entrevistado > 1) {
 do {
     fflush (stdin);
     printf ("\nInsira o sexo \n");
-    printf ("Digite 'M' ou 'm' para o sexo masculino \n");
-    printf ("Digite 'F' ou 'f' para o sexo feminino \n\n");
+    printf ("Digite 'M' para o sexo masculino ou 'F' para o sexo feminino \n\n");
     printf ("Informe o sexo do(a) entrevistado(a): ");
     scanf (" %c", &sexo);
     sexo = toupper (sexo);
 
-    if (sexo != 'M' && sexo != 'F') {
-    printf ("O sexo informado é INVÁLIDO! Digite 'F' ou 'f para feminino e 'M' ou 'm' para masculino \n"); }
-} while (sexo != 'M' && sexo != 'F');
+switch (sexo) {
+case 'M':
+    break;
+
+case 'F':
+    break;
+    
+default:
+    printf ("O sexo informado é INVÁLIDO! Digite 'F' para feminino ou 'M' para masculino \n");
+    break; }
+
+} while (sexo != 'M' && sexo != 'F'); 
 
 // Lendo a idade e validando a informação
 
@@ -65,20 +76,20 @@ do {
     scanf ("%d", &idade);
 
     if (idade < 0 || idade > 300) {
-    printf ("\nA idade dos entrevistados é LIMITADA entre 0 e 190 anos! Digite a idade novamente \n"); }  
+    printf ("\nA idade dos entrevistados é LIMITADA entre 0 e 300 anos! Digite a idade novamente \n"); }  
 } while (idade < 0 || idade > 300);
 
 // Lendo o salário e validando a informação
-    
+
 do {
-    printf ("Informe o salário do(a) entrevistado(a): ");
+    printf ("Informe o salário mais recente do(a) entrevistado(a): ");
     scanf ("%f", &salario);
 
     if (salario < 0) {
     printf ("\nO valor do salário é INVÁLIDO! Digite o valor novamente \n"); }
 } while (salario < 0);
 
-// Acumulando os valores de salários elimpando o terminal
+// Acumulando os valores de salários e limpando o terminal
     
     system ("cls || clear");
     somadeSalario += salario; 
@@ -98,9 +109,12 @@ case 2:
 system ("cls || clear");
 mediaSalarial = (float) somadeSalario / (float) entrevistado;
 
-if(entrevistado > 0) {
+// Validando se há informações do Case 1 para obter o acesso ao Case 2
 
-    printf ("INSTITUTO DE ESTATÍSTICA NACIONAL (IEN)\nRESULTADOS DA PESQUISA POPULACIONAL \n\n");
+if (entrevistado > 0) {
+
+    printf ("INSTITUTO DE ESTATÍSTICA NACIONAL (IEN)\n");
+    printf ("RESULTADOS DA PESQUISA POPULACIONAL \n\n");
     printf ("Quantidade de entrevistados: %d \n", entrevistado);
     printf ("Maior idade entre os entrevistados: %d \n", maiorIdade);
     printf ("Menor idade entre os entrevistados: %d \n", menorIdade);
@@ -115,6 +129,7 @@ if(entrevistado > 0) {
 default:
 system ("cls || clear");
     printf ("OPÇÃO SELECIONDA É INVÁLIDA! Retorne à tela de ações. \n\n");
+    sleep(2); // Executa o próximo comando no tempo determinado em parênteses
     break; }
     
 } while (opcao != 2);
