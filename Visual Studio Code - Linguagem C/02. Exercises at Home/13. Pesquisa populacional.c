@@ -15,7 +15,7 @@ int main () {
 
 // Declaração de variáveis
 
-    int a = 0, opcao, entrevistado, idade, maiorIdade = 0, menorIdade = 150, quantidadeDeMulheres = 0;
+    int a = 0, opcao, entrevistado, idade, maiorIdade = 0, menorIdade = 300, quantidadeDeMulheres = 0;
     char sexo; 
     float salario, somadeSalario = 0, mediaSalarial;
 
@@ -64,12 +64,19 @@ do {
     printf ("Informe a idade do(a) entrevistado(a): ");
     scanf ("%d", &idade);
 
-    if (idade < 0 || idade > 150) {
-    printf ("\nA idade dos entrevistados é LIMITADA entre 0 e 150 anos! Digite a idade novamente \n"); }  
-} while (idade < 0 || idade > 150);
+    if (idade < 0 || idade > 300) {
+    printf ("\nA idade dos entrevistados é LIMITADA entre 0 e 190 anos! Digite a idade novamente \n"); }  
+} while (idade < 0 || idade > 300);
 
+// Lendo o salário e validando a informação
+    
+do {
     printf ("Informe o salário do(a) entrevistado(a): ");
     scanf ("%f", &salario);
+
+    if (salario < 0) {
+    printf ("\nO valor do salário é INVÁLIDO! Digite o valor novamente \n"); }
+} while (salario < 0);
 
 // Acumulando os valores de salários elimpando o terminal
     
