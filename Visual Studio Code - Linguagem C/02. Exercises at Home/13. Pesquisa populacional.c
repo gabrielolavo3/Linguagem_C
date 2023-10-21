@@ -31,10 +31,17 @@ do {
     scanf ("%d", &opcao);
 
 switch (opcao) {
-case 1:
-    printf ("Informe a quantidade de entrevistados: ");
-    scanf ("%d", &entrevistado);
+case 1: 
+// Lendo o número de entrevistados e validando a informação
 
+do {
+    printf ("Informe a quantidade de entrevistados: ");
+    scanf ("%d", &entrevistado); 
+
+    if (entrevistado <= 0) {
+        printf ("\nQuantidade de entrevistados INVÁLIDO! Informe os dados novamente\n"); } 
+} while (entrevistado <= 0);
+    
 // Inserindo as perguntas sobre sexo, idade e salário em Loop de acordo com a quantidade de entrevistados
 
 for (a = 1; a <= entrevistado; a++) {
