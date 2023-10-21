@@ -32,8 +32,8 @@ system ("cls || clear");
 // Tela de resultado
 
     printf ("MINI CALCULADORA DE DIVISÃO!\n\n");
-    printf ("1º número: %.0d\n", primeiroNumero);
-    printf ("2º número: %.0d\n", segundoNumero);
+    printf ("1º número: %d\n", primeiroNumero);
+    printf ("2º número: %d\n", segundoNumero);
     printf ("Quociente da divisão: %.0f\n", quociente);
     printf ("Resto da divisão: %.0f\n", restodaDivisao);
 
