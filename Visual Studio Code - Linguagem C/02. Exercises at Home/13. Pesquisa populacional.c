@@ -1,5 +1,5 @@
 /* 
-Descrição  : Com base em uma pesquisa populacioanl com X entrevistados, solicitar o sexo, idade e salároi de cada entrevistado.
+Descrição  : Com base em uma pesquisa populacional com X entrevistados, solicitar o sexo, idade e salário de cada entrevistado.
 Com isso, imprimir a quantidade de pessoas, a maior e menor idade, e a quantidade de mulheres com salário a partir de R$ 5.000,00! (função)
 Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
