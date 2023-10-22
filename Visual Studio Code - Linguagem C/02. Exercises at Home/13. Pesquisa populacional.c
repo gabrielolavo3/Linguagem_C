@@ -125,7 +125,7 @@ if (entrevistado > 0) {
     printf ("Quantidade de entrevistados: %d \n", entrevistado);
     printf ("Maior idade entre os entrevistados: %d \n", maiorIdade);
     printf ("Menor idade entre os entrevistados: %d \n", menorIdade);
-    printf ("Mulheres com salário acima de R$ 5000,00: %d \n", quantidadeDeMulheres);
+    printf ("Mulheres com salário a partir de R$ 5000,00: %d \n", quantidadeDeMulheres);
     printf ("Média salarial: R$ %.2f \n", mediaSalarial);
     break;
 
