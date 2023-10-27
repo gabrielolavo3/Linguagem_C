@@ -1,3 +1,9 @@
+/* 
+Descri√ß√£o  : Ler um valor e aplicar a convers√£o de medida, seja de Km/h para M/s ou vice-versa, de acordo ao usu√°rio.
+Ao final, imprimir o valor inserido pelo usu√°rio e o resultado da convers√£o! (fun√ß√£o)
+Autor(a)   : Gabriel S. Olavo
+Data atual : 27/10/2023 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,7 +12,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     float velocidade;
     float resultado;
@@ -19,14 +25,14 @@ do {
     printf ("CONVERSOR DE ESCALA DE VELOCIDADE\n\n");
     printf ("Insira o valor da velocidade: ");
     scanf ("%f", &velocidade);
-    printf ("\nSELECIONE A CONVERS√O DE MEDIDA \n\n");
-    printf ("CÛdigo | \tDescriÁ„o\n");
+    printf ("\nSELECIONE A CONVERS√ÉO DE MEDIDA \n\n");
+    printf ("C√≥digo | \tDescri√ß√£o\n");
     printf ("   1   | Converter de Km/h para M/s\n");
     printf ("   2   | Converter de M/s para Km/h\n\n");
-    printf ("Selecione a apÁ„o desejada: ");
+    printf ("Selecione a ap√ß√£o desejada: ");
     scanf ("%d", &menu);
 
-// Aplicando e calculando a convers„o 
+// Aplicando e calculando a convers√£o 
 
 switch (menu) {
 case 1:
@@ -41,7 +47,7 @@ case 2:
 
 default:
 system ("cls || clear");
-    printf ("OpÁ„o selecionada È INV¡LIDA!\n\n");
+    printf ("Op√ß√£o selecionada √© INV√ÅLIDA!\n\n");
     break; }
 
 } while (menu != 1 && menu != 2);
@@ -52,7 +58,7 @@ system ("cls || clear");
 
     printf ("CONVERSOR DE ESCALA DE VELOCIDADE\n\n");
     printf ("Valor informado: %.2f\n", velocidade);
-    printf ("Resultado da convers„o: %.2f %s\n", resultado, medidaFinal);
+    printf ("Resultado da convers√£o: %.2f %s\n", resultado, medidaFinal);
 
   return 0;
 }
