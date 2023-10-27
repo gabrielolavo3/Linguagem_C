@@ -1,5 +1,5 @@
 /* 
-Descrição  : Ler 1 número inteiro e imprimir se ele é positivo ou negativo! (função)
+DescriÃ§Ã£o  : Ler 1 nÃºmero inteiro e imprimir se ele Ã© positivo ou negativo! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 27/10/2023 */
 
@@ -11,31 +11,31 @@ Data atual : 27/10/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int numero;
     char resultado [250];
 
 // Solicitando dados
 
-    printf ("IDENTIFICADOR DE NÚMERO POSITIVO OU NEGATIVO\n\n");
+    printf ("IDENTIFICADOR DE NÃšMERO POSITIVO OU NEGATIVO\n\n");
     printf ("Informe um valor: ");
     scanf ("%d", &numero);
 
-// Verificando se o número é positivo ou negativo
+// Verificando se o nÃºmero Ã© positivo ou negativo
 
     if (numero >= 1 ) {
-        strcpy (resultado, "O número é positivo");
+        strcpy (resultado, "O nÃºmero Ã© positivo");
     
     } else {
-        strcpy (resultado, "O número é negativo"); }
+        strcpy (resultado, "O nÃºmero Ã© negativo"); }
     
 // Tela de resultado
 
 system ("cls || clear");
 
-    printf ("IDENTIFICADOR DE NÚMERO POSITIVO OU NEGATIVO\n\n");
-    printf ("Número inserido: %d\n", numero);
+    printf ("IDENTIFICADOR DE NÃšMERO POSITIVO OU NEGATIVO\n\n");
+    printf ("NÃºmero inserido: %d\n", numero);
     printf ("Resultado: %s", resultado);
 
     return 0;
