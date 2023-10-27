@@ -1,6 +1,5 @@
 /* 
-Descrição  : Calcular e imprimir a resitência equivalente de um circuito ao ler o valor de 2 resistores em paralelo e calcular
-o resulatdo com o valor de 1 resistor em série! (função)
+DescriÃ§Ã£o  : Calcular e imprimir a resitÃªncia equivalente de um circuito ao ler o valor de 2 resistores em paralelo e calcular o resulatdo com o valor de 1 resistor em sÃ©rie! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 27/10/2023 */
 
@@ -11,7 +10,7 @@ Data atual : 27/10/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     float Primeiro_resitor;
     float Segundo_resitor;
@@ -21,16 +20,16 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("ELETROELETRÔNICA - MEDIÇÃO DE RESISTÊNCIA EQUIVALENTE EM CIRCUITOS ELÉTRICOS\n");
-    printf ("Insira os valores dos resistores em paralelo e do resistor em série aos anteriores\n\n");
-    printf ("Informe o valor do 1º resistor (R1): ");
+    printf ("ELETROELETRÃ”NICA - MEDIÃ‡ÃƒO DE RESISTÃŠNCIA EQUIVALENTE EM CIRCUITOS ELÃ‰TRICOS\n");
+    printf ("Insira os valores dos resistores em paralelo e do resistor em sÃ©rie aos anteriores\n\n");
+    printf ("Informe o valor do 1Âº resistor (R1): ");
     scanf ("%f", &Primeiro_resitor);
-    printf ("Informe o valor do 2º resistor (R2): ");
+    printf ("Informe o valor do 2Âº resistor (R2): ");
     scanf ("%f", &Segundo_resitor);
-    printf ("Informe o valor do 3º resistor (R3): ");
+    printf ("Informe o valor do 3Âº resistor (R3): ");
     scanf ("%f", &Terceiro_resitor);
 
-// Calculando a resistência equivalente
+// Calculando a resistÃªncia equivalente
 
     Resistencia_em_Paralelo = (Primeiro_resitor*Segundo_resitor) / (Primeiro_resitor+Segundo_resitor);
     Resistencia_Equivalente = Resistencia_em_Paralelo + Terceiro_resitor;
@@ -39,12 +38,12 @@ int main ( ) {
 
 system ("cls || clear");
 
-    printf ("ELETROELETRÔNICA - MEDIÇÃO DE RESISTÊNCIA EQUIVALENTE EM CIRCUITOS ELÉTRICOS\n");
-    printf ("Conclusão dos cálculos\n\n");
+    printf ("ELETROELETRÃ”NICA - MEDIÃ‡ÃƒO DE RESISTÃŠNCIA EQUIVALENTE EM CIRCUITOS ELÃ‰TRICOS\n");
+    printf ("ConclusÃ£o dos cÃ¡lculos\n\n");
     printf ("Valor de R1 e R2: %.2f e %.2f Ohms\n", Primeiro_resitor, Segundo_resitor);
     printf ("Valor de R3: %.2f Ohms\n\n", Terceiro_resitor);
-    printf ("Resistência do circuito em paralelo: %.2f Ohms\n", Resistencia_em_Paralelo);
-    printf ("Resistência equivalente ou total: %.2f Ohms\n", Resistencia_Equivalente);
+    printf ("ResistÃªncia do circuito em paralelo: %.2f Ohms\n", Resistencia_em_Paralelo);
+    printf ("ResistÃªncia equivalente ou total: %.2f Ohms\n", Resistencia_Equivalente);
 
     return 0;
 }
