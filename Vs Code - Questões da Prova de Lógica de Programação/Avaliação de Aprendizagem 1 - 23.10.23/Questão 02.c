@@ -1,7 +1,7 @@
 /* 
-Descrição  : Ler o nome, sexo e ano de nascimento para se inscrever em um curso. Com base na idade, àqueles
-a partir de 18 ano terão os dados impressos na tela, confirmando a inscrição; quem tiver menos, imprimir a mensagem:
-"Não é possível realizar o cadastro, o (a) candidato (a) deve ter 18 anos ou mais."! (função)
+DescriÃ§Ã£o  : Ler o nome, sexo e ano de nascimento para se inscrever em um curso. Com base na idade, Ã queles
+a partir de 18 ano terÃ£o os dados impressos na tela, confirmando a inscriÃ§Ã£o; quem tiver menos, imprimir a mensagem:
+"NÃ£o Ã© possÃ­vel realizar o cadastro, o (a) candidato (a) deve ter 18 anos ou mais."! (funÃ§Ã£o)
 Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/11/2023 */
@@ -16,7 +16,7 @@ Data atual : 02/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     char nome [250];
     char sexo;
@@ -25,7 +25,7 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL (Senac)\nRealize sua inscrição no curso de DS\n\n");
+    printf ("SERVIÃ‡O NACIONAL DE APRENDIZAGEM COMERCIAL (Senac)\nRealize sua inscriÃ§Ã£o no curso de DS\n\n");
     printf ("Informe o seu nome: ");
     fgets (nome, 250, stdin);
     nome [strcspn (nome, "\n")] = 0;
@@ -40,17 +40,19 @@ int main ( ) {
 
     idade = 2023 - anodeNascimento;
 
+// Tela de resultado
+
     if (idade >= 18) {
     
     system ("cls");
-        printf ("SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL (Senac)\nDados Coletados\n\n");
+        printf ("SERVIÃ‡O NACIONAL DE APRENDIZAGEM COMERCIAL (Senac)\nDados Coletados\n\n");
         printf ("Nome do inscrito: %s\n", nome);
         printf ("Sexo do inscrito: %c\n", sexo);
         printf ("Idade atual ou aproximada do inscrito: %d\n\n", idade);
-        printf ("OBRIGADO! Inscrição realizada com sucesso!");
+        printf ("OBRIGADO! InscriÃ§Ã£o realizada com sucesso!");
 
     } else {
-        printf ("\n\nNão é possível realizar o cadastro, o (a) candidato (a) deve ter 18 anos ou mais."); }
+        printf ("\n\nNÃ£o Ã© possÃ­vel realizar o cadastro, o (a) candidato (a) deve ter 18 anos ou mais."); }
 
     return 0;
 }
