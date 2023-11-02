@@ -6,7 +6,6 @@ Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/11/2023 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
