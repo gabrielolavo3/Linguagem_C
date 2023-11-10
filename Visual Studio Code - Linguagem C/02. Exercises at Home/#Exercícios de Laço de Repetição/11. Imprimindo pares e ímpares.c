@@ -1,6 +1,6 @@
 /* 
-Descrção  : Ler 1 número e imprimir todos os números pares e ímpares, em ordem crescente,
-até o número digitado pelo usuário! (funo)
+DescrÃ§Ã£o  : Ler 1 nÃºmero e imprimir todos os nÃºmeros pares e Ã­mpares, em ordem crescente,
+atÃ© o nÃºmero digitado pelo usuÃ¡rio! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 10/11/2023 */
 
@@ -11,25 +11,25 @@ Data atual : 10/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int i = 0, numero;
 
 // Solicitando dados
 
-    printf ("CONTADOR DE NÚMEROS PARES E ÍMPARES\n\n");
-    printf ("Digite um número: ");
+    printf ("CONTADOR DE NÃšMEROS PARES E ÃMPARES\n\n");
+    printf ("Digite um nÃºmero: ");
     scanf ("%d", &numero);
 
-// Imprimindo números pares  
+// Imprimindo nÃºmeros pares  
 
-    printf ("\nNúmeros pares até %d: ", numero);
+    printf ("\nNÃºmeros pares atÃ© %d: ", numero);
     for (i = 0; i <= numero; i+= 2) {
     printf ("%d, ", i); } 
 
-// Imprimindo números ímpares  
+// Imprimindo nÃºmeros Ã­mpares  
 
-    printf ("\nNúmeros ímpar até %d: ", numero);
+    printf ("\nNÃºmeros Ã­mpar atÃ© %d: ", numero);
     for (i = 1; i <= numero; i+= 2) {
     printf ("%d, ", i); } 
     printf ("\n"); 
