@@ -2,7 +2,7 @@
 Descrição  : Usar um vetor para ler a idade e nome de 5 pessoas. No final, imprimir os dados! (função)
 Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
-Data atual : 11/10/2023 */
+Data atual : 11/11/2023 */
 
 #include <stdio.h>
 #include <stdlib.h>
