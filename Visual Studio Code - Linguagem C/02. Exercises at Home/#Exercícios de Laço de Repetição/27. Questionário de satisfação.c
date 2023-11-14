@@ -1,11 +1,18 @@
+/* 
+Descri√ß√£o  : Realizar uma pesquisa de satisfa√ß√£o de cinema e imprimir a m√©dia das idades das pessoas que responderam √≥timo,
+quantidade de pessoas que respondeu regular e percentual de pessoas que respondeu bom. Usar 3 - √≥timo, 2 - bom e 1 - regular! (fun√ß√£o)
+Professor  : Carlos Anderson Santos de Jesus
+Autor(a)   : Gabriel S. Olavo
+Data atual : 13/11/2023 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
 int main ( ) {
-    setlocale (LC_ALL, "");
+    setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a = 0;
     int idade;
@@ -20,22 +27,23 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("Question·rio de satisfaÁ„o\n");
-    printf ("CÛdigo | DescriÁ„o\n");
-    printf ("   3   | ”timo\n");
-    printf ("   2   | Bom\n");
-    printf ("   1   | Regular\n\n");
-    printf ("Informe a sua idade e a sua opini„o sobre o filme abaixo\n\n");
+    printf ("CINEMA ANAL√ìGICO - Question√°rio de satisfa√ß√£o\n\n");
+    printf ("N√≠vel | Descri√ß√£o\n");
+    printf ("  3   | √ìtimo\n");
+    printf ("  2   | Bom\n");
+    printf ("  1   | Regular\n\n");
+    printf ("Informe a sua idade e a sua opini√£o sobre o filme abaixo\n\n");
 
     for (a = 1; a <= 15; a++) {
 
     do {
-        printf ("Informe a idade do %d™ espectadaor: ", a);
+        printf ("Informe a idade do %d¬™ espectador: ", a);
         scanf ("%d", &idade);
-        printf ("Informe o nÌvel de satisfaÁ„o: ");
+        printf ("Informe o n√≠vel de satisfa√ß√£o: ");
         scanf ("%d", &opiniao);
+        printf ("\n");
 
-// Acumulando as respostas "”timo" e "Regular"
+// Acumulando as respostas "√ìtimo" e "Regular"
 
         if (opiniao == 1) {
             Regular_Quant++; }
@@ -52,19 +60,22 @@ int main ( ) {
         Quantidade_Total++;
 
         if (idade <= 0 || opiniao < 1 || opiniao > 3) {
-            printf ("\nDado inv·lido! Insira novamente...\n\n"); }
+            printf ("\nDado inv√°lido! Insira novamente...\n\n"); }
 
     } while (idade <= 0 || opiniao < 1 || opiniao > 3); 
 }
 
-// Calculando a mÈdias de idades de "”timo" e o percentual de "Bom"
+// Calculando a m√©dias de idades de "√ìtimo" e o percentual de "Bom"
 
         media = (float) Otimo_idade / (float) Quant_otimo; 
         percentual = ((float) Bom_opiniao / (float) Quantidade_Total) * (float) 100; 
 
 // Tela de resultado
 
-    printf ("MÈdia das idades das pessoas que responderam Ûtimo: %.0f\n", media);
+    system ("cls");
+
+    printf ("CINEMA ANAL√ìGICO\nResumo do Question√°rio\n\n");
+    printf ("M√©dia das idades das pessoas que responderam √≥timo: %.0f\n", media);
     printf ("Quantidade de pessoas que respondeu regular: %d\n", Regular_Quant);
     printf ("Percentual de pessoas que respondeu bom: %.2f%%\n", percentual);
 
