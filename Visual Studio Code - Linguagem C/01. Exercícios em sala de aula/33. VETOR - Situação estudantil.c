@@ -6,7 +6,7 @@ int main ( ) {
     setlocale (LC_ALL,"");
 
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a;
     int tamanho = 4;
@@ -19,7 +19,7 @@ int main ( ) {
     do
     {
     
-        printf ("Digite a %d� nota: ", a + 1);
+        printf ("Digite a %dª nota: ", a + 1);
         scanf ("%f", &nota[a]); 
         
         soma += nota[a]; 
@@ -30,7 +30,7 @@ int main ( ) {
 
         system ("cls");
     for (a = 0; a < tamanho; a++) {
-        printf ("%d� nota: %.2f\n", a+1, nota[a]); }
+        printf ("%dª nota: %.2f\n", a+1, nota[a]); }
         printf ("%.2f", media);
 
         if (media >=7) {
