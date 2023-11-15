@@ -5,16 +5,16 @@
 int main ( ) {
     setlocale (LC_ALL, "");
  
- // Declaração de variáveis
+ // DeclaraÃ§Ã£o de variÃ¡veis
 
     int a, b = 5;
     float numero [b];
 
  // Solicitando dados
 
-    printf ("INDICADOR DE NÚMEROS COM VETOR\nDigite os números solicitados\n\n");
+    printf ("INDICADOR DE NÃšMEROS COM VETOR\nDigite os nÃºmeros solicitados\n\n");
     for (a = 0; a < b; a++) {
-        printf ("Informe o %dº valor: ", a+1);
+        printf ("Informe o %dÂº valor: ", a+1);
         scanf ("%f", &numero[a]);
 
         if (numero [a] < 0) {
@@ -24,9 +24,9 @@ int main ( ) {
 // Tela de resultado
 
     system ("cls || clear");
-    printf ("INDICADOR DE NÚMEROS COM VETOR - Resultado\n\n");
+    printf ("INDICADOR DE NÃšMEROS COM VETOR - Resultado\n\n");
     for (a = 0; a < b; a++) {
-        printf ("%dº valor: %.2f\n", a+1, numero[a]); }
+        printf ("%dÂº valor: %.2f\n", a+1, numero[a]); }
 
     return 0;
 }
