@@ -6,7 +6,7 @@ int main ( ) {
     setlocale (LC_ALL,"");
 
 /*
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a;
     float nota [3];
@@ -14,16 +14,16 @@ int main ( ) {
 // Solicitando dados
 
     for (a = 0; a < 3; a++) {
-        printf ("Digite a %d™ nota: ", a + 1);
+        printf ("Digite a %d¬™ nota: ", a + 1);
         scanf ("%f", &nota[a]); }
 
         system ("cls");
     for (a = 0; a < 3; a++) {
-        printf ("%d™ nota: %.2f\n", a+1, nota[a]); }
+        printf ("%d¬™ nota: %.2f\n", a+1, nota[a]); }
 
 */
 
-// VERS√O 2 - DeclaraÁ„o de vari·veis
+// VERS√ÉO 2 - Declara√ß√£o de vari√°veis
 
     int a;
     int tamanho = 5;
@@ -32,7 +32,7 @@ int main ( ) {
 // Solicitando dados
 
     for (a = 0; a < tamanho; a++) {
-        printf ("Digite a %d™ nota: ", a + 1);
+        printf ("Digite a %d¬™ nota: ", a + 1);
         scanf ("%f", &nota[a]); 
         
         soma += nota[5]
@@ -43,7 +43,7 @@ int main ( ) {
 
         system ("cls");
     for (a = 0; a < tamanho; a++) {
-        printf ("%d™ nota: %.2f\n", a+1, nota[a]); }
+        printf ("%d¬™ nota: %.2f\n", a+1, nota[a]); }
         printf ("%.2f", media);
 
     return 0;
