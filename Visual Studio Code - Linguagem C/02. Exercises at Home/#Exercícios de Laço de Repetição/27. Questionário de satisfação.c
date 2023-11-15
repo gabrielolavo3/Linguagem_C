@@ -1,7 +1,6 @@
 /* 
 Descrição  : Realizar uma pesquisa de satisfação de cinema e imprimir a média das idades das pessoas que responderam ótimo,
 quantidade de pessoas que respondeu regular e percentual de pessoas que respondeu bom. Usar 3 - ótimo, 2 - bom e 1 - regular! (função)
-Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
 Data atual : 13/11/2023 */
 
