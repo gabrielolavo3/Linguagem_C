@@ -5,7 +5,7 @@
 int main ( ) {
     setlocale (LC_ALL, "");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a, pares = 0, impar = 0;
     int tamanho = 6, numero [tamanho];
@@ -13,7 +13,7 @@ int main ( ) {
 // Solicitando dados
 
     for (a = 0; a < tamanho; a++) {
-        printf ("Informe o %d∫ n˙mero: ", a+1);
+        printf ("Informe o %d¬∫ n√∫mero: ", a+1);
         scanf ("%d", &numero[a]);
 
     // numero[a] % 2 == 0 ? pares++ : impar++;
@@ -29,9 +29,9 @@ int main ( ) {
 
     system ("cls");
     for (a = 0; a < tamanho; a++) {
-        printf ("%d∫ n˙mero: %d\n", a+1,numero[a]); }
+        printf ("%d¬∫ n√∫mero: %d\n", a+1,numero[a]); }
         printf ("Quantidade de pares: %d\n", pares);
-        printf ("Quantidade de Ìmpares: %d\n", impar);
+        printf ("Quantidade de √≠mpares: %d\n", impar);
 
 
     return 0;
