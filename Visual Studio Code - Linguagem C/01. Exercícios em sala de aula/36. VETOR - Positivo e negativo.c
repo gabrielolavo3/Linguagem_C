@@ -5,7 +5,7 @@
 int main ( ) {
     setlocale (LC_ALL, "");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a, b = 10, soma_Negativo = 0;
     float numero [b], soma_Positivo = 0;
@@ -13,7 +13,7 @@ int main ( ) {
 // Solicitando dados
 
     for (a = 0; a < b; a++) {
-        printf ("Informe o %d∫ n˙mero: ", a+1);
+        printf ("Informe o %d¬∫ n√∫mero: ", a+1);
         scanf ("%f", &numero[a]);
 
         if (numero[a] < 0) {
