@@ -5,7 +5,7 @@
 int main ( ) {
     setlocale (LC_ALL, "");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a, b = 6;
     int numero [b];
@@ -15,13 +15,13 @@ int main ( ) {
     for (a = 0; a < b; a++) {
 
     do {
-        printf ("Informe o %d∫ valor: ", a+1);
+        printf ("Informe o %d¬∫ valor: ", a+1);
         scanf ("%d", &numero[a]);
 
-        if (numero[a] % 2 != 0 || numero[a] < 0) {
+        if (numero[a] % 2 != 0 || numero[a] <= 0) {
             printf ("\nValor incorreto! Informe um valor positivo e par\n\n"); }
 
-    } while (numero[a] % 2 != 0 || numero[a] < 0);
+    } while (numero[a] % 2 != 0 || numero[a] <= 0);
 }
 
     for (a = --b; a >= 0; a--) {
