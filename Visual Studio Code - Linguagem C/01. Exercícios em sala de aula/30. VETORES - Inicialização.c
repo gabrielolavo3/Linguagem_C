@@ -5,57 +5,57 @@
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 /*
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     float notas [3];
 
 // Solicitando dados
 
-    printf ("Informe a 1ª nota: ");
+    printf ("Informe a 1Âª nota: ");
     scanf ("%f", &notas [0]);
-    printf ("Informe a 2ª nota: ");
+    printf ("Informe a 2Âª nota: ");
     scanf ("%f", &notas [1]);
-    printf ("Informe a 3ª nota: ");
+    printf ("Informe a 3Âª nota: ");
     scanf ("%f", &notas [2]);
 
 // Tela de resultado
 
     printf ("NOTAS INSERIDAS!\n\n");
-    printf ("1ª nota: %.2f\n", notas [0]);
-    printf ("2ª nota: %.2f\n", notas [1]);
-    printf ("3ª nota: %.2f\n", notas [2]);
+    printf ("1Âª nota: %.2f\n", notas [0]);
+    printf ("2Âª nota: %.2f\n", notas [1]);
+    printf ("3Âª nota: %.2f\n", notas [2]);
 */
 
 /*
 
-// VERSÃO 2- Declaração de variáveis
+// VERSÃƒO 2- DeclaraÃ§Ã£o de variÃ¡veis
 
     float notas [5];
 
 // Solicitando dados
 
-    printf ("Informe a 1ª nota: ");
+    printf ("Informe a 1Âª nota: ");
     scanf ("%f", &notas [0]);
-    printf ("Informe a 2ª nota: ");
+    printf ("Informe a 2Âª nota: ");
     scanf ("%f", &notas [1]);
-    printf ("Informe a 3ª nota: ");
+    printf ("Informe a 3Âª nota: ");
     scanf ("%f", &notas [2]);
-    printf ("Informe a 4ª nota: ");
+    printf ("Informe a 4Âª nota: ");
     scanf ("%f", &notas [3]);
-    printf ("Informe a 5ª nota: ");
+    printf ("Informe a 5Âª nota: ");
     scanf ("%f", &notas [4]);
 
 // Tela de resultado
 
     printf ("NOTAS INSERIDAS!\n\n");
-    printf ("1ª nota: %.2f\n", notas [0]);
-    printf ("2ª nota: %.2f\n", notas [1]);
-    printf ("3ª nota: %.2f\n", notas [2]);
-    printf ("4ª nota: %.2f\n", notas [3]);
-    printf ("5ª nota: %.2f\n", notas [4]);
+    printf ("1Âª nota: %.2f\n", notas [0]);
+    printf ("2Âª nota: %.2f\n", notas [1]);
+    printf ("3Âª nota: %.2f\n", notas [2]);
+    printf ("4Âª nota: %.2f\n", notas [3]);
+    printf ("5Âª nota: %.2f\n", notas [4]);
 */
 
-// VERSÃO 3 - Declaração de variáveis
+// VERSÃƒO 3 - DeclaraÃ§Ã£o de variÃ¡veis
 
     int i, vetor[5];
 
