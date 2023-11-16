@@ -24,7 +24,8 @@ int main ( ) {
 
         for (b = 0; b < 3; b++) {
             printf ("Digite a %dª nota do aluno: ", b + 1);
-            scanf ("%f", &notas[a][b]); }
+            scanf ("%f", &notas[a][b]); 
+        }
         
         // setbuf (stdin, 0); = lInux
 
@@ -38,7 +39,7 @@ system ("cls || clear");
     for (a = 0; a < c; a++) {
         printf ("Nome do %dº aluno: %s\n", a+1, alunos[a]);
         
-        for (b = 0; b < c; b++) {
+        for (b = 0; b < 3; b++) {
             printf ("%dª nota: %2.f\n", a+1, notas[a][b]); }
     }
 
