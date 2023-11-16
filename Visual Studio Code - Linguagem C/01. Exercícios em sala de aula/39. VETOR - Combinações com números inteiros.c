@@ -1,5 +1,5 @@
 /* 
-Descrição  : Ler 5 números ! (função)
+DescriÃ§Ã£o  : Ler 5 nÃºmeros ! (funÃ§Ã£o)
 Professor  : Carlos Anderson Santos de Jesus
 Autor(a)   : Gabriel S. Olavo
 Data atual : 16/11/2023 */
@@ -11,10 +11,10 @@ Data atual : 16/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a, b = 5;
-    int numero[b], pares = 0, impares = 0, maior = 0, menor = 99999;
+    int numero[b], pares = 0, impares = 0, maior = INT_MIN, menor = INT_MAX;
     int somaPar = 0, somaImpar = 0, positivo = 0, negativo = 0;
     float mediaGeral, mediaPar, mediaImpar, soma_de_Numeros = 0;
 
@@ -22,53 +22,59 @@ int main ( ) {
 
     printf ("HIGH CUBE - VERIFICADOR DE VALORES INTEIROS\n\n");
     for (a = 0; a < b; a++) {
-        printf ("Informe o %d número: ", a+1);
+        printf ("Informe o %d nÃºmero: ", a+1);
         scanf ("%d", &numero[a]);
 
         soma_de_Numeros += numero[a];
 
-// Verificando maior, menor, positivo e negativo
+// Verificando maior, menor, pares e Ã­mpares
 
-        numero [a] > 0 ? positivo++ : negativo++; 
+        numero [a] % 2 == 0 ? pares = pares + 1 : impares++; 
         maior = numero[a] > maior ? numero[a] : maior;
         menor = numero[a] < menor ? numero[a] : menor;
 
-// Acumulando e somando os pares e ímpares
+// Acumulando e somando a quantidade de pares e Ã­mpares
 
         if (numero[a] % 2 == 0) {
-            somaPar += numero[a]; 
-            pares++;
+            somaPar = somaPar +  numero[a]; 
 
         } else {
-            somaImpar += numero[a];
-            impares++; }
+            somaImpar += numero[a]; }
+
+// Verificando positivo e negativo
+
+        if (numero[a] > 0) {
+            positivo++; }
+
+        if (numero[a] < 0) {
+            negativo++; }
     }
 
-// Calculando a média de pares, ímpares e a média de todos os valores
+// Calculando a mÃ©dia de pares, Ã­mpares e a mÃ©dia de todos os valores
 
-    mediaGeral = soma_de_Numeros / b;
+    mediaGeral = soma_de_Numeros / (float)b;
     mediaPar = (float)somaPar / (float)pares;
     mediaImpar = (float)somaImpar / (float)impares;
 
 // Tela de resultado
 
-system ("cls");
+system ("cls || clear");
 
     printf ("HIGH CUBE - VERIFICADOR DE VALORES INTEIROS\n\n");
-    printf ("Quantidade de números pares: %d\n", pares);
-    printf ("Quantidade de números ímpares: %d\n", impares);
-    printf ("Quantidade de números positivos: %d\n", positivo);
-    printf ("Quantidade de números negativos: %d\n\n", negativo);
-    printf ("Quantidade de valores inseridos: %d\n", b);
-    printf ("Maior número: %d\n", maior);
-    printf ("Menor número: %d\n\nMédias dos Valores\n\n", menor);
-    printf ("Média de pares: %.2f\n", mediaPar);
-    printf ("Média de ímpares: %.2f\n", mediaImpar);
-    printf ("Média total: %.2f\n\n", mediaGeral);
+    printf ("Quantidade de nÃºmeros pares: %d\n", pares);
+    printf ("Quantidade de nÃºmeros Ã­mpares: %d\n", impares);
+    printf ("Quantidade de nÃºmeros positivos: %d\n", positivo);
+    printf ("Quantidade de nÃºmeros negativos: %d\n", negativo);
+    printf ("Quantidade de valores inseridos: %d\n\n", b);
+    printf ("Maior nÃºmero: %d\n", maior);
+    printf ("Menor nÃºmero: %d\n\nMÃ©dias dos Valores\n\n", menor);
+    printf ("MÃ©dia de pares: %.2f\n", mediaPar);
+    printf ("MÃ©dia de Ã­mpares: %.2f\n", mediaImpar);
+    printf ("MÃ©dia total: %.2f\n\n", mediaGeral);
     
     printf ("Ordem Inversa dos Valores\n\n");
     for (a = --b; a >= 0; a--) {
-        printf ("%dº valor: %d\n", a+1, numero[a]); }
+        printf ("%dÂº valor: %d\n", a+1, numero[a]); }
     
     return 0;
 }
