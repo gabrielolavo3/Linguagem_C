@@ -1,7 +1,7 @@
 /* 
-DescrÁ„o  : Ler 10 idades, pesos e alturas, calcular e mostrar: 1 - mÈdia total das idades;
+Descr√ß√£o  : Ler 10 idades, pesos e alturas, calcular e mostrar: 1 - m√©dia total das idades;
 2 - a quantidade de pessoas com mais de 90 quilos e altura menor a 1,50;
-3 - a porcentagem de pessoas com idade entre 10 e 30 anos que medem mais de 1,90! (funÁ„o)
+3 - a porcentagem de pessoas com idade entre 10 e 30 anos que medem mais de 1,90! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 18/11/2023 */
 
@@ -12,7 +12,7 @@ Data atual : 18/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a = 0;
     int b = 10;
@@ -27,9 +27,9 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("INSTITUTO 'JOHN BROWN' DE PESQUISAS\nQuestion·rio na Praia de Cube\n\n");
+    printf ("INSTITUTO 'JOHN BROWN' DE PESQUISAS\nQuestion√°rio na Praia de Cube\n\n");
     for (a = 1; a <= b; a++) {
-        printf ("Digite a idade da %d™ entrevistado: ", a);
+        printf ("Digite a idade da %d¬™ entrevistado: ", a);
         scanf ("%d", &idade);
         printf ("Informe o peso: ");
         scanf ("%f", &peso);
@@ -48,7 +48,7 @@ int main ( ) {
 
 // Acumulando a quantidade de pessoas e calculando o percentual com idade entre 10 e 30 e que tem a partir de 1,90 de altura
 
-        if (idade >= 10 || idade <= 30 || altura >= 1.90) {
+        if (idade >= 10 && idade <= 30 && altura > 1.90) {
             somaPeso_Altura++; }
         
         if (somaPeso_Altura > 0) {
@@ -58,7 +58,7 @@ int main ( ) {
             percentual = 0; }
     }
 
-// Calculando a mÈdia das idades e o percentual de pessoa com mais de 1,90 de altura e idade entre 10 e 30
+// Calculando a m√©dia das idades e o percentual de pessoa com mais de 1,90 de altura e idade entre 10 e 30
 
     media = (float)somaIdade / b;
 
@@ -67,9 +67,9 @@ int main ( ) {
 system ("cls || clear");
 
     printf ("INSTITUTO 'JOHN BROWN' DE PESQUISAS\nResultado da Pesquisa\n\n");
-    printf ("MÈdia de idades: %.0f\n", media);
+    printf ("M√©dia de idades: %.0f\n", media);
     printf ("Quantidade de entrevistados com mais de 90 Kgs e altura abaixo de 1,50: %d\n", somaPessoas);
-    printf ("Porcentagem de entrevistados com idade de 10 ‡ 30 anos que medem mais de 1,90: %.2f%%\n", percentual);
+    printf ("Porcentagem de entrevistados com idade de 10 √† 30 anos que medem mais de 1,90: %.2f%%\n", percentual);
 
     return 0;
 }
