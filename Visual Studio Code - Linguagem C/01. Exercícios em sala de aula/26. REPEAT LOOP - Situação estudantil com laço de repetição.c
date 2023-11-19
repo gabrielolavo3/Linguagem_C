@@ -6,7 +6,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a;
     float nota, soma, media;
@@ -16,34 +16,34 @@ int main () {
 
 for (a = 0; a < 3; a+=1) {
     do {
-    printf ("Digite a %d∫ nota: ", a+1);
+    printf ("Digite a %d¬∫ nota: ", a+1);
     scanf ("%f", &nota);
 
     if (nota < 0 || nota > 10) { 
-    printf ("Nota inv·lida. \n Digite a nota do aluno \n: "); }
+    printf ("Nota inv√°lida. \n Digite a nota do aluno \n: "); }
 
 soma += nota;
 } while (nota < 0 || nota > 10); }
 
-// C·lculando a mÈdia
+// C√°lculando a m√©dia
 
 media = soma / a;
 
-// Aplicando situaÁ„o
+// Aplicando situa√ß√£o
 
 if (media >= 7) {
     strcpy (situacao, "Aprovado");
 
 } else if (media >= 5 && media <= 6.9) {
-    strcpy (situacao, "RecuperaÁ„o");
+    strcpy (situacao, "Recupera√ß√£o");
 
 } else
     strcpy (situacao, "Reprovado");
 
 // Tela de resultado
 
-    printf ("\nMÈdia: %.2f", media);
-    printf ("\nSituaÁ„o: %s", situacao);
+    printf ("\nM√©dia: %.2f", media);
+    printf ("\nSitua√ß√£o: %s", situacao);
     
     return 0;
 }
