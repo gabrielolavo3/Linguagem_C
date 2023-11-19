@@ -5,20 +5,20 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
     int numero;
 
 // Solicitando dados
 
-    printf ("Informe um número: ");
+    printf ("Informe um nÃºmero: ");
     scanf ("%d", &numero);
 
 // Comando SE
 
 if (numero >= 10) {
-    printf ("O número é igual ou maior do que 10!");
+    printf ("O nÃºmero Ã© igual ou maior do que 10!");
 } else { 
-    printf ("O número é menor do que 10!");
+    printf ("O nÃºmero Ã© menor do que 10!");
 } 
 
 return 0;
