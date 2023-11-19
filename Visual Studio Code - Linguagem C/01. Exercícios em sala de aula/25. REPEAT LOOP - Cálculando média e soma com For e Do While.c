@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
 int a; 
 float media, soma, nota;
@@ -18,18 +18,18 @@ for (a =1; a <= 2; a++) {
     scanf ("%f", &nota); 
     
     if (nota < 0 || nota > 10) {
-    printf ("Nota inv·lida. Digite a nota do aluno novamente...\n\n"); }
+    printf ("Nota inv√°lida. Digite a nota do aluno novamente...\n\n"); }
 
 // Calculando a soma e fim do Do While
 soma += nota;
     } while (nota < 0 || nota > 10); }
 
-// Calculando a mÈdia 
+// Calculando a m√©dia 
 media = soma / --a; // a = 2
 
 // Tela de resultado
 
-    printf ("MÈdia: %.2f", media);
+    printf ("M√©dia: %.2f", media);
 
 return 0;
 
