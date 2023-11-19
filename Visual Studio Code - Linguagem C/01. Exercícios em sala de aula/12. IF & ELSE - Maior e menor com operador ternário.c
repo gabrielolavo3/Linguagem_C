@@ -1,5 +1,5 @@
 /* 
-Descrição  : Ler 3 números e verificar qual é o maior e o menor valor com operação ternária! (função)
+DescriÃ§Ã£o  : Ler 3 nÃºmeros e verificar qual Ã© o maior e o menor valor com operaÃ§Ã£o ternÃ¡ria! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/10/2023 */
 
@@ -10,20 +10,20 @@ Data atual : 02/10/2023 */
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// Declarando variáveis
+// Declarando variÃ¡veis
 
     float primeiroNumero, segundoNumero, terceiroNumero, maior, menor;
 
 // Solicitando dados
 
-    printf ("informe o 1º número: ");
+    printf ("informe o 1Âº nÃºmero: ");
     scanf ("%f", &primeiroNumero);
-    printf ("informe o 2º número: ");
+    printf ("informe o 2Âº nÃºmero: ");
     scanf ("%f", &segundoNumero);
-    printf ("informe o 3º número: ");
+    printf ("informe o 3Âº nÃºmero: ");
     scanf ("%f", &terceiroNumero);
 
-//Operação ternária para maior e menor número
+//OperaÃ§Ã£o ternÃ¡ria para maior e menor nÃºmero
 
     maior = primeiroNumero > segundoNumero ? primeiroNumero : segundoNumero;
     maior = maior > terceiroNumero ? maior : terceiroNumero;
@@ -36,11 +36,11 @@ system ("cls || clear");
 // Tela de resultado
 
     printf ("RESUMO DOS DADOS INSERIDOS \n\n");
-    printf ("1º número: %.2f \n", primeiroNumero);
-    printf ("2º número: %.2f \n", segundoNumero);
-    printf ("3º número: %.2f \n\n", terceiroNumero);
-    printf ("Maior número: %.2f \n", maior);
-    printf ("Menor número: %.2f \n", menor);
+    printf ("1Âº nÃºmero: %.2f \n", primeiroNumero);
+    printf ("2Âº nÃºmero: %.2f \n", segundoNumero);
+    printf ("3Âº nÃºmero: %.2f \n\n", terceiroNumero);
+    printf ("Maior nÃºmero: %.2f \n", maior);
+    printf ("Menor nÃºmero: %.2f \n", menor);
 
     return 0;
 }
