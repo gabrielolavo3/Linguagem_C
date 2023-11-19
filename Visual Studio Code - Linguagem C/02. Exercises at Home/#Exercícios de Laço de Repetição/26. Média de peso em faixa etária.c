@@ -1,6 +1,6 @@
 /* 
-Descrção  : Ler 15 idades e pesos. Calcular e mostrar as médias dos pesos das pessoas da mesma faixa etária:
-1ª faixa - 1 e 10 anos; 2ª faixa - 11 e 20 anos; 3ª faixa - 21 e 30 anos; 4ª faixa - a partir de 30 anos! (função)
+DescrÃ§Ã£o  : Ler 15 idades e pesos. Calcular e mostrar as mÃ©dias dos pesos das pessoas da mesma faixa etÃ¡ria:
+1Âª faixa - 1 e 10 anos; 2Âª faixa - 11 e 20 anos; 3Âª faixa - 21 e 30 anos; 4Âª faixa - a partir de 30 anos! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 19/11/2023 */
 
@@ -11,7 +11,7 @@ Data atual : 19/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a = 0;
     int idade;
@@ -22,41 +22,60 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("INSTITUTO HOLMES!\nQuestionário de coleta de dados do Distrito Locus\n\n");
+    printf ("INSTITUTO HOLMES!\nQuestionÃ¡rio de coleta de dados do Distrito Locus\n\n");
 
     for (a = 1; a <= 15; a++) {
-        printf("Informe idade do %dº entrevistado: ", a);
-        scanf ("%d", &idade);
-        printf ("Informe o peso do entrevistado: ");
-        scanf ("%f", &peso);
-        printf ("\n");
 
-// Somando o peso da faixa etária de 1 a 10 anos e acumulando a quantidade de pessoas
+// Lendo e validando a idade
+
+        do {
+            printf("Informe idade do %dÂº entrevistado: ", a);
+            scanf ("%d", &idade);
+
+            if (idade <= 0 || idade > 160) {
+                printf ("\nIdade invÃ¡lida! Informe a idade entre 1 e 160 anos\n\n"); }
+
+        } while (idade <= 0 || idade >= 160);
+
+// Lendo e validando o peso
+
+        do {
+            printf ("Informe o peso do entrevistado: ");
+            scanf ("%f", &peso);
+
+            if (peso < 10 || peso > 250) {
+                printf ("\nPeso invÃ¡lido! Informe o peso entre 10Kg e 250Kg\n\n"); }
+
+        } while (peso < 10 || peso > 250);
+
+    printf ("\n");
+
+// Somando o peso da faixa etÃ¡ria de 1 a 10 anos e acumulando a quantidade de pessoas
 
         if (idade >= 1 && idade <= 10) {
             somaPeso_1e10+=peso; 
             faixaEtaria_1e10++; } 
 
-// Somando o peso da faixa etária de 11 a 20 anos e acumulando a quantidade de pessoas            
+// Somando o peso da faixa etÃ¡ria de 11 a 20 anos e acumulando a quantidade de pessoas            
         
         if (idade >= 11 && idade <= 20) {
             somaPeso_11e20+=peso; 
             faixaEtaria_11e20++; } 
 
-// Somando o peso da faixa etária de 21 a 30 anos e acumulando a quantidade de pessoas
+// Somando o peso da faixa etÃ¡ria de 21 a 30 anos e acumulando a quantidade de pessoas
 
         if (idade >= 21 && idade <= 30) {
             somaPeso_21e30+=peso; 
             faixaEtaria_21e30++; } 
 
-// Somando o peso da faixa etária a partir de 31 anos e acumulando a quantidade de pessoas
+// Somando o peso da faixa etÃ¡ria a partir de 31 anos e acumulando a quantidade de pessoas
 
         if (idade >= 31) {
             somaPeso_31mais+=peso; 
             faixaEtaria_31mais++; }
     }
 
-// Calculando a média de peso de cada faixa etária
+// Calculando a mÃ©dia de peso de cada faixa etÃ¡ria
 
     media_1e10 = somaPeso_1e10 / (float)faixaEtaria_1e10;
     media_11e20 = somaPeso_11e20 / (float)faixaEtaria_11e20;
@@ -68,10 +87,10 @@ int main ( ) {
 system ("cls || clear");
 
     printf ("INSTITUTO HOLMES!\n\n");
-    printf ("Média de peso da faixa etária de 1 a 10 anos: %.2f\n", media_1e10);
-    printf ("Média de peso da faixa etária de 11 a 20 anos: %.2f\n", media_11e20);
-    printf ("Média de peso da faixa etária de 21 a 30 anos: %.2f\n", media_21e30);
-    printf ("Média de peso da faixa etária a partir de 31 anos: %.2f\n", media_31mais);
+    printf ("MÃ©dia de peso da faixa etÃ¡ria de 1 a 10 anos: %.2f\n", media_1e10);
+    printf ("MÃ©dia de peso da faixa etÃ¡ria de 11 a 20 anos: %.2f\n", media_11e20);
+    printf ("MÃ©dia de peso da faixa etÃ¡ria de 21 a 30 anos: %.2f\n", media_21e30);
+    printf ("MÃ©dia de peso da faixa etÃ¡ria a partir de 31 anos: %.2f\n", media_31mais);
     
     return 0;
 }
