@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a, valor, par = 0 , impar = 0;
 
@@ -25,7 +25,7 @@ int main () {
 impares += 1
 impares++ */    }
     
-/*  Versão 2 - Operação ternária
+/*  VersÃ£o 2 - OperaÃ§Ã£o ternÃ¡ria
 
 if ( valor % 2 == 0 ) 
     pares ++;
@@ -37,7 +37,7 @@ valor % 2 == 0 ? pares++ : impar++ */
 // Tela de resultado
 
     printf ("Quantidade de pares %.0d \n", par);
-    printf ("Quantidade de ímpares %.0d\n ", impar);
+    printf ("Quantidade de Ã­mpares %.0d\n ", impar);
     
     return 0;
 }
