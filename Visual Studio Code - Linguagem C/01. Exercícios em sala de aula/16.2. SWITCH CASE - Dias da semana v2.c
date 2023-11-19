@@ -5,17 +5,17 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int dia;
 
 // Solicitando dados
 
-    printf ("INDICADOR DE DIA ÚTIL E FIM DE SEMANA! \n\n");
-    printf ("Informe um número correspondente a um dia da semana: ");
+    printf ("INDICADOR DE DIA ÃšTIL E FIM DE SEMANA! \n\n");
+    printf ("Informe um nÃºmero correspondente a um dia da semana: ");
     scanf ("%d", &dia);
 
-// Convertendo o número em dias
+// Convertendo o nÃºmero em dias
 
 switch (dia) {
 
@@ -24,7 +24,7 @@ case 3:
 case 4:
 case 5:
 case 6:
-    printf ("\nDia Útil");
+    printf ("\nDia Ãštil");
 break;
 
 case 1:
@@ -33,7 +33,7 @@ case 7:
 break;
 
 default:
-    printf ("\nNúmero informado é inválido!");
+    printf ("\nNÃºmero informado Ã© invÃ¡lido!");
 break; }
 
     return 0;
