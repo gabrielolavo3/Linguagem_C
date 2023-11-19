@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
  
  float primeiroNumero, segundoNumero, resultado;
  char operacao;
@@ -13,22 +13,22 @@ int main () {
 // Solicitando dados
 
     printf ("BEM-VINDO A MINI CALCULADORA! \n\n");
-    printf ("Digite o 1∫ n˙mero: ");
+    printf ("Digite o 1¬∫ n√∫mero: ");
     scanf ("%f", &primeiroNumero);
-    printf ("Digite o 1∫ n˙mero: ");
+    printf ("Digite o 1¬∫ n√∫mero: ");
     scanf ("%f", &segundoNumero);
 
 fflush (stdin); 
 
-    printf ("\n\nINSIRA A OPERA«√O MATEM¡TICA \n\n");
-    printf ("Digite '+' para operaÁ„o de adiÁ„o\n");
-    printf ("Digite '-' para operaÁ„o de subtraÁ„o\n");
-    printf ("Digite '*' para operaÁ„o de multiplicaÁ„o\n");
-    printf ("Digite '/' para operaÁ„o de divis„o\n\n");
-    printf ("Escolha a operaÁ„o matem·tica: ");
+    printf ("\n\nINSIRA A OPERA√á√ÉO MATEM√ÅTICA \n\n");
+    printf ("Digite '+' para opera√ß√£o de adi√ß√£o\n");
+    printf ("Digite '-' para opera√ß√£o de subtra√ß√£o\n");
+    printf ("Digite '*' para opera√ß√£o de multiplica√ß√£o\n");
+    printf ("Digite '/' para opera√ß√£o de divis√£o\n\n");
+    printf ("Escolha a opera√ß√£o matem√°tica: ");
     scanf ("%c", &operacao);
 
-// Escolhendo operaÁ„o com Switch Case
+// Escolhendo opera√ß√£o com Switch Case
 
 switch (operacao) {
 
@@ -49,7 +49,7 @@ resultado = primeiroNumero / segundoNumero;
     break;
 
 default:
-    printf ("OperaÁ„o inv·lida; ");
+    printf ("Opera√ß√£o inv√°lida; ");
     break; }
 
 // Limpando o terminal 
@@ -59,10 +59,10 @@ system ("cls");
 // Tela de resultado
 
     printf ("MINI CALCULADORA - RESULTADOS!\n\n");
-    printf ("Primeiro n˙mero: %.2f \n", primeiroNumero);
-    printf ("Segundo n˙mero: %.2f \n", segundoNumero);
-    printf ("OperaÁ„o escolhida: %c \n", operacao);
-    printf ("Resultado da operaÁ„o: %.2f \n", resultado);
+    printf ("Primeiro n√∫mero: %.2f \n", primeiroNumero);
+    printf ("Segundo n√∫mero: %.2f \n", segundoNumero);
+    printf ("Opera√ß√£o escolhida: %c \n", operacao);
+    printf ("Resultado da opera√ß√£o: %.2f \n", resultado);
     
     return 0;
 }
