@@ -6,7 +6,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
     
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int numero;
     char mes [250];
@@ -14,10 +14,10 @@ int main () {
 // Solicitando dados
 
     printf ("INDICADOR DE MESES DO ANO! \n\n");
-    printf ("Informe um número correspondente a um mês do ano: ");
+    printf ("Informe um nÃºmero correspondente a um mÃªs do ano: ");
     scanf ("%d", &numero);
 
-// Convertendo o número em meses
+// Convertendo o nÃºmero em meses
 
     switch (numero) {
     case 1:
@@ -29,7 +29,7 @@ int main () {
     break;
 
     case 3:
-        strcpy (mes, "Março");
+        strcpy (mes, "MarÃ§o");
     break;
 
     case 4:
@@ -69,15 +69,15 @@ int main () {
     break;
 
     default:
-        printf ("Número informado é inválido!");
+        printf ("NÃºmero informado Ã© invÃ¡lido!");
     break; }
 
 system ("cls");
 
 // Tela de resulatdo
 
-    printf ("Número informado: %i \n", numero);
-    printf ("Mês correspondente: %s \n", mes);
+    printf ("NÃºmero informado: %i \n", numero);
+    printf ("MÃªs correspondente: %s \n", mes);
     
     return 0;
 }
