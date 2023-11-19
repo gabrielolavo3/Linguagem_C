@@ -5,7 +5,7 @@
 int main () {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
 int nota = 0;
 
@@ -14,7 +14,7 @@ do {
     scanf ("%d", &nota);
 
     if (nota < 0 || nota > 10) {
-    printf ("Nota inv·lida. Digite a nota novamente:\n"); }
+    printf ("Nota inv√°lida. Digite a nota novamente:\n"); }
 
 } while (nota < 0 || nota > 10);
 
