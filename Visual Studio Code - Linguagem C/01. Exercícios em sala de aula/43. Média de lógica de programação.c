@@ -23,10 +23,10 @@ int main ( ) {
             printf ("Digite a %dª nota: ",x+1);
             scanf ("%f", &nota[k][x]);
 
-        somaNota = nota[k][x]; }
+        somaNota += nota[k][x]; }
 
         printf ("\n");
-        media[k] = somaNota / X;
+        media[k] = somaNota / x;
         somaNota = 0;
         setbuf (stdin, 0);
         fflush (stdin);
