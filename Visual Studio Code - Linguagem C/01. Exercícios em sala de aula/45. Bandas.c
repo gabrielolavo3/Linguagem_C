@@ -3,7 +3,7 @@
 #include <locale.h>
 
 int main ( ) {
-    setlocale (LC_ALL, "");
+    setlocale (LC_ALL, "portuguese");
 
 // Declaração de variáveis
 
@@ -27,6 +27,8 @@ int main ( ) {
 
 // Tela de resultado
 
+system ("cls || clear");
+
     for (a = 0; a < 3; a++) {
         printf ("Nome da banda: %s\n", nome_Banda[a]);
 
@@ -35,7 +37,6 @@ int main ( ) {
 
         printf ("\n");
     }
-
 
     return 0;
 }
