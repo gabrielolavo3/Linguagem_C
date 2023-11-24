@@ -1,6 +1,5 @@
 /* 
-Descrção   : Ler 2 vetores - A e B -, cada um com 20 números inteiros e imprimir a soma, subtração e multiplicação entre cada 
-posição dos 2 vetores! (função)
+DescrÃ§Ã£o   : Ler 2 vetores - A e B -, cada um com 20 nÃºmeros inteiros e imprimir a soma, subtraÃ§Ã£o e multiplicaÃ§Ã£o entre cada posiÃ§Ã£o dos 2 vetores! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 23/11/2023 */
 
@@ -11,7 +10,7 @@ Data atual : 23/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a, b;
     int numeros[20], valor[20];
@@ -19,34 +18,34 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("ARITMÉTHIKUS! FAÇA OPERAÇÕES ENTRE DIVERSOS NÚMEROS\n\n");
+    printf ("ARITMÃ‰THIKUS! FAÃ‡A OPERAÃ‡Ã•ES ENTRE DIVERSOS NÃšMEROS\n\n");
     for (a = 0; a < 20; a++) {
-        printf ("Digite o %dº número da posição A: ", a+1);
+        printf ("Digite o %dÂº nÃºmero da posiÃ§Ã£o A: ", a+1);
         scanf ("%d", &numeros[a]); }
     
     printf ("\n");
 
     for (b = 0; b < 20; b++) {
-        printf ("Digite o %dº número da posição B: ", b+1);
+        printf ("Digite o %dÂº nÃºmero da posiÃ§Ã£o B: ", b+1);
         scanf ("%d", &valor[b]); }
 
-// Tela de resultado e calculando a soma, multiplicação e subtração dos vetores
+// Tela de resultado e calculando a soma, multiplicaÃ§Ã£o e subtraÃ§Ã£o dos vetores
 
 system ("cls || clear");
 
-    printf ("ARITMÉTHIKUS!\n\n");
+    printf ("ARITMÃ‰THIKUS!\n\n");
     for (a = 0; a < 20; a++) {
-        printf ("Subtração da %dª posição: %d\n", a+1, subtracao[a] = numeros[a] - valor[a]); }
+        printf ("SubtraÃ§Ã£o da %dÂª posiÃ§Ã£o: %d\n", a+1, subtracao[a] = numeros[a] - valor[a]); }
     
     printf ("\n");
 
     for (a = 0; a < 20; a++) {
-        printf ("Soma da %dª posição: %d\n", a+1, soma[a] = numeros[a] + valor[a]); }
+        printf ("Soma da %dÂª posiÃ§Ã£o: %d\n", a+1, soma[a] = numeros[a] + valor[a]); }
 
     printf ("\n");
 
     for (a = 0; a < 20; a++) {
-        printf ("Multiplicação da %dª posição: %d\n", a+1, multiplicacao[a] = numeros[a] * valor[a]); }
+        printf ("MultiplicaÃ§Ã£o da %dÂª posiÃ§Ã£o: %d\n", a+1, multiplicacao[a] = numeros[a] * valor[a]); }
 
     return 0;
 }
