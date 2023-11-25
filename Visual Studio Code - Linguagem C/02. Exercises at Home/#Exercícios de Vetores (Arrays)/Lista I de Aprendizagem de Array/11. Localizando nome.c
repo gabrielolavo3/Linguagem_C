@@ -1,6 +1,5 @@
 /* 
-DescrÁ„o   : Ler um vetor com 10 nomes de pessoas e pedir  e ler do usu·rio digite um nome qualquer de pessoa. 
-Escrever a mensagem ?ACHEI?, se o nome estiver armazenado no vetor ou ?N√O ACHEI? caso contr·rio! (funÁ„o)
+Descr√ß√£o   : Ler um vetor com 10 nomes de pessoas e pedir  e ler do usu√°rio digite um nome qualquer de pessoa. Imprima a mensagem "Encontrado", se o nome estiver armazenado no vetor ou "N√£o encontrado" caso contr√°rio! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 25/11/2023 */
 
@@ -13,20 +12,20 @@ Data atual : 25/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int i;
-    char nomes[10][250] = {"Gabriel Olavo", "LuÌs Ot·vio", "Maria NazarÈ", "Lene de Jesus", "Renato Barreto", "Camile Oliveira", "Ana Souza", "Paula Gomes", "Rafael Silva", "Andrei Vieira"};
+    char nomes[10][250] = {"Gabriel Olavo", "Lu√≠s Ot√°vio", "Maria Nazar√©", "Lene de Jesus", "Renato Barreto", "Camile Oliveira", "Ana Souza", "Paula Gomes", "Rafael Silva", "Andrei Vieira"};
     char nome_de_pessoa[250];
     char resultado[250];
 
 // Solicitando dados
 
     printf ("MOUNTAIN OF DATA! BUSCA POR DESAPARECIDO\n\n");
-    printf ("Informe o 1∫ nome e o sobrenome da pessoa que procura: ");
+    printf ("Informe o 1¬∫ nome e o sobrenome da pessoa que procura: ");
     gets (nome_de_pessoa);
 
-    printf ("\nBuscando informaÁıes");
+    printf ("\nBuscando informa√ß√µes");
     for (i = 0; i < 3; i++) {
         printf (".");
         sleep (1); }
@@ -37,13 +36,13 @@ int main ( ) {
         strcpy (resultado, "Nome localizado!");
     
     } else {
-        strcpy (resultado, "Nome n„o localizado no banco de dados!"); }
+        strcpy (resultado, "Nome n√£o localizado no banco de dados!"); }
 
 // Tela de resultado
 
 system ("cls || clear");
 
-    printf ("MOUNTAIN OF DATA!\nConclus„o da Busca\n\n");
+    printf ("MOUNTAIN OF DATA!\nConclus√£o da Busca\n\n");
     printf ("Resultado final: %s", resultado);
 
     return 0;
