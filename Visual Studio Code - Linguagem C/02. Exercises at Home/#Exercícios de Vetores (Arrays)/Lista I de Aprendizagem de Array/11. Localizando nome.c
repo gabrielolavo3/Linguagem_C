@@ -1,5 +1,6 @@
 /* 
-Descrção   : Ler um vetor com 10 nomes de pessoas e pedir  e ler do usuário digite um nome qualquer de pessoa. Imprima a mensagem "Encontrado", se o nome estiver armazenado no vetor ou "Não encontrado" caso contrário! (função)
+Descrção   : Ler um vetor com 10 nomes de pessoas e pedir  e ler do usuário digite um nome qualquer de pessoa. 
+Imprima a mensagem "Encontrado", se o nome estiver armazenado no vetor ou "Não encontrado" caso contrário! (função)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 25/11/2023 */
 
