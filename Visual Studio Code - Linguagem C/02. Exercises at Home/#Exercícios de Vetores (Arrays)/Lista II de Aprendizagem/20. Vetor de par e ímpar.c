@@ -1,6 +1,6 @@
 /* 
-Descrção   : Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um somente para números pares, 
-e outro somente para números ímpares. Após, exiba os valores dos dois vetores na tela, em sequência! (função)
+DescrÃ§Ã£o   : Crie um programa que armazene 10 nÃºmeros digitados pelo usuÃ¡rio em dois vetores: um somente para nÃºmeros pares, 
+e outro somente para nÃºmeros Ã­mpares. ApÃ³s, exiba os valores dos dois vetores na tela, em sequÃªncia! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 26/11/2023 */
 
@@ -11,22 +11,22 @@ Data atual : 26/11/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
-    int x, s;
+    int x;
     int numeros[10];
     int par[10], impar[10];
 
 // Solicitando dados
 
-    printf ("PAIR ET IMPAIR! Contador de valores pares e ímpares\n\n");
+    printf ("PAIR ET IMPAIR! Contador de valores pares e Ã­mpares\n\n");
     for (x = 0; x < 10; x++) {
         do {
-            printf ("Informe %dº valor par: ", x+1);
+            printf ("Informe %dÂº valor par: ", x+1);
             scanf ("%d", &numeros[x]);
 
             if (numeros[x] % 2 != 0) {
-                printf ("\nVALOR INCORRETO! Por favor, informe um número par\n\n"); }
+                printf ("\nVALOR INCORRETO! Por favor, informe um nÃºmero par\n\n"); }
             
         } while (numeros[x] % 2 != 0);
 
@@ -35,17 +35,17 @@ int main ( ) {
 
     printf ("\n");
 
-    for (s = 0; s < 10; s++) {
+    for (x = 0; x < 10; x++) {
         do {
-            printf ("Informe %dº valor ímpar: ", s+1);
-            scanf ("%d", &numeros[s]);
+            printf ("Informe %dÂº valor Ã­mpar: ", x+1);
+            scanf ("%d", &numeros[x]);
 
-            if (numeros[s] % 2 == 0) {
-                printf ("\nVALOR INCORRETO! Por favor, informe um número ímpar\n\n"); }
+            if (numeros[x] % 2 == 0) {
+                printf ("\nVALOR INCORRETO! Por favor, informe um nÃºmero Ã­mpar\n\n"); }
 
-        } while (numeros[s] % 2 == 0);
+        } while (numeros[x] % 2 == 0);
 
-        impar[s] = numeros[s];
+        impar[x] = numeros[x];
     }
 
 // Tela de resultado
@@ -54,12 +54,12 @@ system ("cls || clear");
 
     printf ("PAIR ET IMPAIR!\n\n");
     for (x = 0; x < 10; x++) {
-        printf ("%dº valor par: %d\n", x+1, par[x]); }
+        printf ("%dÂº valor par: %d\n", x+1, par[x]); }
 
     printf ("\n");
 
-    for (s = 0; s < 10; s++) {
-        printf ("%dº valor ímpar: %d\n", s+1, impar[s]); }
+    for (x = 0; x < 10; x++) {
+        printf ("%dÂº valor Ã­mpar: %d\n", x+1, impar[x]); }
 
     return 0;
 }
