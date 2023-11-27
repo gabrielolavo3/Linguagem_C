@@ -1,6 +1,6 @@
 /* 
-Descrção   : Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um somente para números pares, 
-e outro somente para números ímpares. Após, exiba os valores dos dois vetores na tela, em sequência! (função)
+Descrição   : Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um somente para números pares, 
+e outro somente para números ímpares. Também evite a entrada do valor 0. Após, exiba os valores dos dois vetores na tela, em sequência! (função)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 26/11/2023 */
 
@@ -26,9 +26,12 @@ int main ( ) {
             scanf ("%d", &numeros[x]);
 
             if (numeros[x] % 2 != 0) {
-                printf ("\nVALOR INCORRETO! Por favor, informe um número par\n\n"); }
+                printf ("\nVALOR INCORRETO! Por favor, informe um número par\n\n"); 
+
+            } else if (numeros[x] == 0) {
+                printf ("\nVALOR INCORRETO! O valor 0 não é aceito. Por favor, informe outro número\n\n"); }
             
-        } while (numeros[x] % 2 != 0);
+        } while (numeros[x] % 2 != 0 || numeros[x] == 0);
 
         par[x] = numeros[x];
     }
@@ -41,9 +44,12 @@ int main ( ) {
             scanf ("%d", &numeros[x]);
 
             if (numeros[x] % 2 == 0) {
-                printf ("\nVALOR INCORRETO! Por favor, informe um número ímpar\n\n"); }
+                printf ("\nVALOR INCORRETO! Por favor, informe um número ímpar\n\n"); 
+            
+            } else if (numeros[x] == 0) {
+                printf ("\nVALOR INCORRETO! O valor 0 não é aceito. Por favor, informe outro número\n\n"); }
 
-        } while (numeros[x] % 2 == 0);
+        } while (numeros[x] % 2 == 0 || numeros[x] == 0);
 
         impar[x] = numeros[x];
     }
