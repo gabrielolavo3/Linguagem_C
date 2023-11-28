@@ -42,11 +42,15 @@ system ("cls || clear");
   printf ("NUMERIC SET!\n\n")
   for (a = 0; a < b; a++) {
     if (x == vetor[a]) {
-      printf ("Elemento localizado!\nElemento pertencente à posição %d do conjunto", a);
-    
+      printf ("Elemento localizado!\nElemento pertencente à posição %d do conjunto\n", a);
+
+/* Caso o valor não esteja no vetor, o contador irá acumular a quantidade de iterações feitas para encontrar no número de X */
+ 
     } else {
       contador++; }
   }
+
+/* Mensagem de exibição caso o valor do contador se iguale a b(20), pois percorreu todo o vetor e não localizou o valor */
 
   if (contador == b) {
     printf ("O elemento informado não foi localizado no conjunto de números"); }
