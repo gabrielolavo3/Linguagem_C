@@ -1,5 +1,5 @@
 /* 
-Descrção   : Ler um vetor de 10 posições e verificar se existem valores iguais e os imprimir! (função)
+DescrÃ§Ã£o   : Ler um vetor de 10 posiÃ§Ãµes e verificar se existem valores iguais e os imprimir! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/12/2023 */
 
@@ -10,26 +10,26 @@ Data atual : 02/12/2023 */
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
-    int a, b;
+    int a, b, contador;
     float vetor[10];
 
 // Solicitando dados
 
-    printf ("ASSIMILATOR! Comparador e Analisador de Números\n\n");
+    printf ("ASSIMILATOR! Comparador e Analisador de NÃºmeros\n\n");
     for (a = 0; a < 10; a++) {
-        printf ("Informe o %dº número: ", a+1);
+        printf ("Informe o %dÂº nÃºmero: ", a+1);
         scanf ("%f", &vetor[a]);
     }
 
-// Tela de resultado de percorrendo o vetor duas vezes para efetuar a comparação
+// Tela de resultado de percorrendo o vetor duas vezes para efetuar a comparaÃ§Ã£o
 
 system ("cls || clear");
 
-    printf ("ASSIMILATOR! Comparador e Analisador de Números\n\n");
+    printf ("ASSIMILATOR! Comparador e Analisador de NÃºmeros\n\n");
     for (a = 0; a < 10; a++) {
-        printf ("%dº valor: %.2f\n", a+1, vetor[a]);
+        printf ("%dÂº valor: %.2f\n", a+1, vetor[a]);
     }
 
     printf ("\n");
@@ -37,10 +37,19 @@ system ("cls || clear");
     for (a = 0; a < 10; a++) {
         for (b = a + 1; b < 10; b++) {
             if (vetor[a] == vetor[b]) {
-                printf ("Valor repetido: %.2f\n", vetor[b]); 
-            } 
+                printf ("Valor repetido: %.2f\n", vetor[b]); } 
+
+/* Caso nÃ£o haja valores iguais em cada iteraÃ§Ã£o, a variÃ¡vel serÃ¡ atualizada +1 */            
+
+            if (vetor[a] != vetor[b]) {
+                contador++; }
         }
     }
+
+/* Mensagem de exibiÃ§Ã£o caso todo o vetor nÃ£o haja valores repetidos */
+
+    if (contador == 10) {
+        printf ("Resultado: NÃ£o hÃ¡ valores repetidos"); }
 
     return 0;
 }
