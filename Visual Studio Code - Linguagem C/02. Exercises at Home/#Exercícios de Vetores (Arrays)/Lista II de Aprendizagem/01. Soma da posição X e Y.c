@@ -1,6 +1,6 @@
 /* 
-DescrÁ„o   : Ler um vetor de 12 posiÁıes e ler tambÈm 2 valores X e Y quaisquer correspondentes a duas posiÁıes no vetor. 
-Ao final, imprimir a soma dos valores encontrados nas posiÁıes X e Y! (funÁ„o)
+Descr√ß√£o   : Ler um vetor de 12 posi√ß√µes e ler tamb√©m 2 valores X e Y quaisquer correspondentes a duas posi√ß√µes no vetor. 
+Ao final, imprimir a soma dos valores encontrados nas posi√ß√µes X e Y! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 02/12/2023 */
 
@@ -8,14 +8,14 @@ Data atual : 02/12/2023 */
 #include <stdlib.h>
 #include <locale.h>
 
-// DeclaraÁ„o de constante
+// Declara√ß√£o de constante
 
 #define G 12
 
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a, b;
     float soma = 0;
@@ -23,29 +23,29 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("SOMADOR VOID! Leitor de N˙meros Vetorizados\n\n");
+    printf ("SOMADOR VOID! Leitor de N√∫meros Vetorizados\n\n");
     for (a = 0; a < G; a++) {
-        printf ("Informe o %d∫ valor do conjunto de n˙meros: ", a+1);
+        printf ("Informe o %d¬∫ valor do conjunto de n√∫meros: ", a+1);
         scanf ("%f", &vetor[a]);
     }
 
 // Lendo e validando os valores de X e Y
 
     do {
-        printf ("\nInforme uma posiÁ„o qualquer X do conjunto de %d n˙meros: ", G);
+        printf ("\nInforme uma posi√ß√£o qualquer X do conjunto de %d n√∫meros: ", G);
         scanf ("%f", &X);
 
         if (X < 0 || X > G) {
-            printf ("\nPOSI«√O INACESSÕVEL! Digite a posiÁ„o do conjunto entre 0 e 11\n\n"); }
+            printf ("\nPOSI√á√ÉO INACESS√çVEL! Digite a posi√ß√£o do conjunto entre 0 e %d\n\n", G); }
 
     } while (X < 0 || X > G);
 
     do {
-        printf ("Informe uma posiÁ„o qualquer Y do conjunto de %d n˙meros: ", G);
+        printf ("Informe uma posi√ß√£o qualquer Y do conjunto de %d n√∫meros: ", G);
         scanf ("%f", &Y);
 
         if (Y < 0 || Y > G) {
-            printf ("\nPOSI«√O INACESSÕVEL! Digite a posiÁ„o do conjunto entre 0 e 11\n\n"); }
+            printf ("\nPOSI√á√ÉO INACESS√çVEL! Digite a posi√ß√£o do conjunto entre 0 e %d\n\n", G); }
 
     } while (Y < 0 || Y > G);
 
@@ -53,16 +53,16 @@ int main ( ) {
 
 system ("cls || clear");
 
-    printf ("SOMADOR VOID! Leitor de N˙meros Vetorizados\n\n");
+    printf ("SOMADOR VOID! Leitor de N√∫meros Vetorizados\n\n");
 
-/* Percorrendo o vetor para localizar as posiÁıes solicitadas */
+/* Percorrendo o vetor para localizar as posi√ß√µes solicitadas */
 
     for (a = 0; a < G; a++) {
         for (b = a + 1; b < G; b++) {
             if (a == X && b == Y) {
-                printf ("Valor da posiÁ„o X: %.2f\n", vetor[a]);
-                printf ("Valor da posiÁ„o Y: %.2f\n", vetor[b]);
-                printf ("Resultado da soma de posiÁıes: %.2f\n", soma = vetor[a] + vetor[b]);
+                printf ("Valor da posi√ß√£o X: %.2f\n", vetor[a]);
+                printf ("Valor da posi√ß√£o Y: %.2f\n", vetor[b]);
+                printf ("Resultado da soma de posi√ß√µes: %.2f\n", soma = vetor[a] + vetor[b]);
             }
         }
     }
