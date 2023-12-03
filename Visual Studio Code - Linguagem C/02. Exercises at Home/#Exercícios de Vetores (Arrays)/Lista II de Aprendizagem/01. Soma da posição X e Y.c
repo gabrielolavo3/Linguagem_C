@@ -45,8 +45,11 @@ int main ( ) {
         printf ("Informe uma posição Y distinta da posição X no conjunto de %d números: ", G);
         scanf ("%d", &Y);
 
-        if (Y < 0 || Y >= G || Y == X) {
-            printf ("\nPOSIÇÃO INACESSÍVEL! Digite a posição do conjunto entre 0 e %d\n\n", G-1); }
+        if (Y < 0 || Y >= G) {
+            printf ("\nPOSIÇÃO INACESSÍVEL! Digite a posição do conjunto entre 0 e %d\n\n", G-1); 
+        
+        } else if (Y == X) {
+            printf ("\nPOSIÇÃO INACESSÍVEL! Digite o valor da posição Y diferente do valor da posição X\n\n"); }
 
     } while (Y < 0 || Y >= G || Y == X);
 
