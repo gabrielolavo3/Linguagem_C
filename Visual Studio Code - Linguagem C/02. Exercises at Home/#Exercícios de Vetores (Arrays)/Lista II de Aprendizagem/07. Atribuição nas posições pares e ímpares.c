@@ -1,6 +1,6 @@
 /* 
-Descrição  : Ler 2 vetores de 20 posições e imprimir um 3º vetor contendo, nas posições pares os valores do primeiro 
-e nas posições impares os valores do segundo! (função)
+DescriÃ§Ã£o  : Ler 2 vetores de 20 posiÃ§Ãµes e imprimir um 3Âº vetor contendo, nas posiÃ§Ãµes pares os valores do primeiro 
+e nas posiÃ§Ãµes impares os valores do segundo! (funÃ§Ã£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 04/12/2023 */
 
@@ -8,14 +8,14 @@ Data atual : 04/12/2023 */
 #include <stdlib.h>
 #include <locale.h>
 
-// Declaração de constante
+// DeclaraÃ§Ã£o de constante
 
-#define G 10
+#define G 20
 
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// Declaração de variáveis
+// DeclaraÃ§Ã£o de variÃ¡veis
 
     int a;
     int conjunto_A[G];
@@ -24,20 +24,20 @@ int main ( ) {
 
 // Solicitando dados
 
-    printf ("CONJUNTOS ARITMÉTICOS! Leitor e Atribuidor de Valores Vetorizados\n\n");
+    printf ("CONJUNTOS ARITMÃ‰TICOS! Leitor e Atribuidor de Valores Vetorizados\n\n");
     for (a = 0; a < G; a++) {
-        printf ("Informe o %dº valor do conjunto A: ", a+1);
+        printf ("Informe o %dÂº valor do conjunto A: ", a+1);
         scanf ("%d", &conjunto_A[a]);
     }
 
     printf ("\n");
 
     for (a = 0; a < G; a++) {
-        printf ("Informe o %dº valor do conjunto B: ", a+1);
+        printf ("Informe o %dÂº valor do conjunto B: ", a+1);
         scanf ("%d", &conjunto_B[a]);
     }
 
-// Atribuindo os valores de acordo a posição de vetor
+// Atribuindo os valores de acordo a posiÃ§Ã£o de vetor
 
     for (a = 0; a < G; a++) {
         
@@ -51,9 +51,9 @@ int main ( ) {
 
 // Tela de resultado
 
-    printf ("CONJUNTOS ARITMÉTICOS!\n\n");
+    printf ("CONJUNTOS ARITMÃ‰TICOS!\n\n");
     for (a = 0; a < G; a++) {
-        printf ("%dº valor do conjunto C: %d\n", a+1, conjunto_Final[a]);
+        printf ("%dÂº valor do conjunto C: %d\n", a+1, conjunto_Final[a]);
     }
 
     return 0;
