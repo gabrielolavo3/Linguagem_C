@@ -9,21 +9,18 @@
 struct endereco {
     char rua[250], numero[250];
     char bairro[250], cidade[250];
-    char estado[250];
-};
+    char estado[250]; };
 
 struct informacao {
     char nome[250];
     char data_de_emissao[250];
     char matricula[250];
-    struct endereco endereco;
-};
+    struct endereco endereco; };
 
 struct dados {
     char nome[250];
     char data_de_nascimento[250];
-    struct endereco endereco;
-};
+    struct endereco endereco; };
 
  int main ( ) {
      setlocale (LC_ALL, "");
@@ -63,8 +60,7 @@ struct dados {
         printf ("Informe o nome do estado: ");
         gets (funcionario[a].endereco.estado);
         setbuf (stdin, 0);
-        printf ("\n");
-    }
+        printf ("\n"); }
     
     for (a = 0; a < G; a++) {
         printf ("Informe o nome do %dº cliente: ", a+1);
@@ -88,8 +84,7 @@ struct dados {
         printf ("Informe o nome do estado: ");
         gets (funcionario[a].endereco.estado);
         setbuf (stdin, 0);
-        printf ("\n");
-    }
+        printf ("\n"); }
     
 // Tela de resultado
 
@@ -99,14 +94,12 @@ system ("cls || clear");
         printf ("Nome do %dº funcionário: %s\n", a+1, funcionario[a].nome);
         printf ("Data de emissão: %s\n", funcionario[a].data_de_emissao);
         printf ("Número de matrícula: %s\n", funcionario[a].matricula);
-        printf ("Endereço: rua %s, nº %s, bairro - %s, %s\n", funcionario[a].endereco.rua, funcionario[a].endereco.numero, funcionario[a].endereco.bairro, funcionario[a].endereco.cidade, funcionario[a].endereco.estado);
-    }
+        printf ("Endereço: rua %s, nº %s, bairro - %s, %s\n", funcionario[a].endereco.rua, funcionario[a].endereco.numero, funcionario[a].endereco.bairro, funcionario[a].endereco.cidade, funcionario[a].endereco.estado); }
     
     for (a = 0; a < G; a++) {
         printf ("Nome do %dº cliente: %s\n", a+1, cliente[a].nome);
         printf ("Data de data_de_nascimento: %d\n", cliente[a].data_de_nascimento);
-        printf ("Endereço: rua %s, nº %s, bairro - %s, %s\n", funcionario[a].endereco.rua, funcionario[a].endereco.numero, funcionario[a].endereco.bairro, funcionario[a].endereco.cidade, funcionario[a].endereco.estado);
-    }
+        printf ("Endereço: rua %s, nº %s, bairro - %s, %s\n", funcionario[a].endereco.rua, funcionario[a].endereco.numero, funcionario[a].endereco.bairro, funcionario[a].endereco.cidade, funcionario[a].endereco.estado); }
 
      return 0;
  }
