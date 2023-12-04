@@ -44,7 +44,7 @@ int main ( ) {
             conjunto_Final[a] = conjunto_A[a];
         
         } else {
-            conjunto_Final[a] = conjunto_B [a]; }
+            conjunto_Final[a] = conjunto_B[a]; }
     }
 
 // Tela de resultado
