@@ -1,5 +1,5 @@
 /* 
-Descrição  : Ler 2 vetores de 20 posições e imprimir um 3º vetor contendo, nas posições pares os valores do primeiro 
+Descrição  : Ler 2 vetores de 20 posições inteiras e imprimir um 3º vetor contendo, nas posições pares os valores do primeiro 
 e nas posições impares os valores do segundo! (função)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 04/12/2023 */
@@ -40,16 +40,16 @@ int main ( ) {
 // Atribuindo os valores de acordo a posição de vetor
 
     for (a = 0; a < G; a++) {
-        
         if (a % 2 == 0) {
             conjunto_Final[a] = conjunto_A[a];
         
         } else {
-            conjunto_Final[a] = conjunto_B [a];
-        }
+            conjunto_Final[a] = conjunto_B [a]; }
     }
 
 // Tela de resultado
+
+system ("cls || clear");
 
     printf ("CONJUNTOS ARITMÉTICOS!\n\n");
     for (a = 0; a < G; a++) {
