@@ -61,7 +61,6 @@ int main ( ) {
 
         } else {
             strcpy (estudante[a].situacao, "Reprovado!"); }
-
     }
   
     printf ("\n");
@@ -76,6 +75,8 @@ int main ( ) {
             setbuf (stdin, 0);
             printf ("Digite o nome da turma: ");
             gets (professor[a].turma[b]);
+            printf ("\n");
+            setbuf (stdin, 0);
         }
     }
 
