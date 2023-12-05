@@ -21,6 +21,7 @@ int main ( ) {
 
 // Solicitando dados
 
+printf ("ACUMULADOR DE VALORES! Leitor e somador de valores\n\n");
   for (a = 0; a < G; a++) {
     printf ("Digite o %dº valor: ", a+1);
     scanf ("%f", &vetor[a]);
@@ -31,12 +32,14 @@ int main ( ) {
 // Tela de resultado
 
 system ("cls || clear");
-  
+
+printf ("ACUMULADOR DE VALORES!\n\n");
   for (a = 0; a < G; a++) {
     printf ("%dº valor: %.2f\n", a+1, vetor[a]);
   }
 
-  printf ("Soma dos valores: %.2f\n", soma);
+printf ("\n");  
+printf ("Soma dos valores: %.2f\n", soma);
   
   return 0;
 }
