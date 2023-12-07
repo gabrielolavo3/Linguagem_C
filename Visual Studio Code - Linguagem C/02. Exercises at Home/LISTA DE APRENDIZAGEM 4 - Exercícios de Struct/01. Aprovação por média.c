@@ -1,6 +1,6 @@
 /* 
-DescrÁ„o   : Ler duas notas e imprimir a situaÁ„o escolar do aluno: 1 - MÈdia igual a 10: "Aprovado com Honra!"; 2 - MÈdia entre 7 e 9,99: 
-"Aprovado!"; 3 - MÈdia abaixo de 7: "Reprovado!". Use struct para armazenar as vari·veis! (funÁ„o)
+Descri√ß√£o  : Ler duas notas e imprimir a situa√ß√£o escolar do aluno: 1 - M√©dia igual a 10: "Aprovado com Honra!"; 2 - M√©dia entre 7 e 9,99: 
+"Aprovado!"; 3 - M√©dia abaixo de 7: "Reprovado!". Use struct para armazenar as vari√°veis! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 07/12/2023 */
 
@@ -9,7 +9,7 @@ Data atual : 07/12/2023 */
 #include <string.h>
 #include <locale.h>
 
-// DeclaraÁ„o de struct e constante
+// Declara√ß√£o de struct e constante
 
 #define G 2
 
@@ -21,30 +21,30 @@ struct aprovacao {
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis comuns e de acesso
+// Declara√ß√£o de vari√°veis comuns e de acesso
 
     int a;
     struct aprovacao estudante;
 
 // Solicitando dados
 
-    printf ("COL…GIO JOHN GREEN! Boletim Online da Turma B1\n\n");
+    printf ("COL√âGIO JOHN GREEN! Boletim Online da Turma B1\n\n");
     for (a = 0; a < G; a++) {
         do {
-            printf ("Informe a %d™ nota: ", a+1);
+            printf ("Informe a %d¬™ nota: ", a+1);
             scanf ("%f", &estudante.notas[a]);
 
             if (estudante.notas[a] < 0 || estudante.notas[a] > 10) {
-                printf ("\nNOTA INV¡LIDA! Por favor, digite uma nota entre 0 e 10\n\n"); }
+                printf ("\nNOTA INV√ÅLIDA! Por favor, digite uma nota entre 0 e 10\n\n"); }
 
         } while (estudante.notas[a] < 0 || estudante.notas[a] > 10);
 
-// Calculando a mÈdia
+// Calculando a m√©dia
 
         estudante.soma += estudante.notas[a];
         estudante.media = estudante.soma / G;
 
-// Aplicando a situaÁ„o escolar
+// Aplicando a situa√ß√£o escolar
 
         if (estudante.media == 10) {
             strcpy (estudante.situacao, "Aprovado com Honra!");
@@ -60,13 +60,13 @@ int main ( ) {
 
 system ("cls || clear");
 
-    printf ("COL…GIO JOHN GREEN! Boletim Online da Turma B1 - Conclus„o dos Dados\n\n");
+    printf ("COL√âGIO JOHN GREEN! Boletim Online da Turma B1 - Conclus√£o dos Dados\n\n");
     for (a = 0; a < G; a++) {
-        printf ("%d™ nota: %.2f\n", a+1, estudante.notas[a]);
+        printf ("%d¬™ nota: %.2f\n", a+1, estudante.notas[a]);
     }
 
-    printf ("MÈdia final: %.2f\n", estudante.media);
-    printf ("SituaÁ„o estudantil: %s\n", estudante.situacao);
+    printf ("M√©dia final: %.2f\n", estudante.media);
+    printf ("Situa√ß√£o estudantil: %s\n", estudante.situacao);
 
     return 0;
 }
