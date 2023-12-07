@@ -1,7 +1,7 @@
 /* 
-DescriÁ„o   : Ler o nome de 2 funcion·rios e o valor do sal·rio de cada. Com isso, imprimir o valor do sal·rio, percentual e valor de aumento, o novo valor
-do sal·rio. Para o calculo: 1 - atÈ R$ 208,00: aumento de 20%; de R$ 281,00 a R$700,00: aumento de 15%; de R$ 701,00 a R$ 1500,00: aumento de 10%; a partir de 
-R$ 1500,00: aumento de 5%. Use struct para armazenar as vari·veis! (funÁ„o)
+Descri√ß√£o  : Ler o nome de 2 funcion√°rios e o valor do sal√°rio de cada. Com isso, imprimir o valor do sal√°rio, percentual e valor de aumento, o novo valor
+do sal√°rio. Para o calculo: 1 - at√© R$ 208,00: aumento de 20%; de R$ 281,00 a R$700,00: aumento de 15%; de R$ 701,00 a R$ 1500,00: aumento de 10%; a partir de 
+R$ 1500,00: aumento de 5%. Use struct para armazenar as vari√°veis! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 07/12/2023 */
 
@@ -9,7 +9,7 @@ Data atual : 07/12/2023 */
 #include <stdlib.h>
 #include <locale.h>
 
-// DeclaraÁ„o de struct e constante
+// Declara√ß√£o de struct e constante
 
 #define G 2
 
@@ -22,7 +22,7 @@ struct informacao {
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis comuns e de acesso
+// Declara√ß√£o de vari√°veis comuns e de acesso
 
     int a, b;
     struct informacao profissional[G];
@@ -31,11 +31,11 @@ int main ( ) {
 
     printf ("INSTITUTO DE PESQUISAS HOLMES! Reajuste Salarial 2023\n\n");
     for (a = 0; a < G; a++) {
-        printf ("Informe o nome do %d∫ funcion·rio: ", a+1);
+        printf ("Informe o nome do %d¬∫ funcion√°rio: ", a+1);
         gets (profissional[a].nome);
 
         for (b = 0; b < 1; b++) {
-            printf ("Informe o valor do atual sal·rio: ");
+            printf ("Informe o valor do atual sal√°rio: ");
             scanf ("%f", &profissional[a].salario[a]); }
         
         printf ("\n");
@@ -66,16 +66,16 @@ int main ( ) {
 
 system ("cls || clear");
 
-    printf ("INSTITUTO DE PESQUISAS HOLMES! Conclus„o do Reajuste Salarial\n\n");
+    printf ("INSTITUTO DE PESQUISAS HOLMES! Conclus√£o do Reajuste Salarial\n\n");
      for (a = 0; a < G; a++) {
-        printf ("Nome do %d∫ funcion·rio: %s\n\n", a+1, profissional[a].nome);
+        printf ("Nome do %d¬∫ funcion√°rio: %s\n\n", a+1, profissional[a].nome);
 
         for (b = 0; b < 1; b++) {
-            printf ("Valor do atual sal·rio: R$ %.2f\n", profissional[a].salario[a]); }
+            printf ("Valor do atual sal√°rio: R$ %.2f\n", profissional[a].salario[a]); }
         
         printf ("Percentual de aumento: %d%%\n", profissional[a].percentual[a]);
         printf ("Valor do aumento: R$ %.2f\n", profissional[a].aumento[a]);
-        printf ("Novo sal·rio: R$ %.2f\n", profissional[a].novo_Salario[a]);
+        printf ("Novo sal√°rio: R$ %.2f\n", profissional[a].novo_Salario[a]);
         printf ("\n");
      }
 
