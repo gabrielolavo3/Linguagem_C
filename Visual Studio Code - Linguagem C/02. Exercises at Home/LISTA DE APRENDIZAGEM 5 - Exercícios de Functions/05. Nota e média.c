@@ -1,7 +1,7 @@
 /* 
-DescriÁ„o  : Criar que ler a idade, nome, nome da matÈria e 2 notas de 3 alunos. No final, imprimir os dados e, 
-por meio de funÁıes, retornar a mÈdia e retornar a classificaÁ„o da mÈdia -> 1 - Entre 0 e 4: 'E'; 2 - Entre 4,1 e 6: 'D'; 
-3 - Entre 6,1 e 7,5: 'C'; 4 - Entre 7,6 e 9: 'B'; MÈdia 10: 'A'! (funÁ„o)
+Descri√ß√£o  : Criar que ler a idade, nome, nome da mat√©ria e 2 notas de 3 alunos. No final, imprimir os dados e, 
+por meio de fun√ß√µes, retornar a m√©dia e retornar a classifica√ß√£o da m√©dia -> 1 - Entre 0 e 4: 'E'; 2 - Entre 4,1 e 6: 'D'; 
+3 - Entre 6,1 e 7,5: 'C'; 4 - Entre 7,6 e 9: 'B'; M√©dia 10: 'A'! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 11/12/2023 */
 
@@ -10,7 +10,7 @@ Data atual : 11/12/2023 */
 #include <string.h>
 #include <locale.h>
 
-// DeclaraÁ„o de constantes, struct e funÁıes
+// Declara√ß√£o de constantes, struct e fun√ß√µes
 
 #define MAX_CHARACTER 250
 #define MAX_NOTE 2
@@ -63,7 +63,7 @@ char* conceito (float valor) {
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis
+// Declara√ß√£o de vari√°veis
 
     int a, b;
     struct escola estudante[MAX_DATA];
@@ -72,17 +72,31 @@ int main ( ) {
 
     titulo ( );
     for (a = 0; a < MAX_DATA; a++) {
-        printf ("Digite o nome do %d∫ estudante: ", a+1);
+        printf ("Digite o nome do %d¬∫ estudante: ", a+1);
         gets (estudante[a].nome);
-        printf ("Digite a idade do estudante: ");
-        scanf ("%d", &estudante[a].idade);
+        
+        do {
+            printf ("Digite a idade do estudante: ");
+            scanf ("%d", &estudante[a].idade);
+
+            if (estudante[a].idade <= 0 || estudante[a].idade > 95) {
+                printf ("\nIDADE INV√ÅLIDA! Por favor, informe a idade entre 1 e 95 anos\n\n"); }
+
+        } while (estudante[a].idade <= 0 || estudante[a].idade > 95);
+
         fflush (stdin);
         printf ("Digite o nome da disciplina: ");
         gets (estudante[a].disciplina);
 
         for (b = 0; b < MAX_NOTE; b++) {
-            printf ("Digite a %d™ nota: ", b+1);
-            scanf ("%f", &estudante[a].nota[b]);
+            do {
+                printf ("Digite a %d¬™ nota: ", b+1);
+                scanf ("%f", &estudante[a].nota[b]);
+
+                if (estudante[a].nota[b] < 0 || estudante[a].nota[b] > 10) {
+                    printf ("\nNOTA INV√ÅLIDA! Por favor, informe uma nota entre 0 e 10\n\n"); }
+
+            } while (estudante[a].nota[b] < 0 || estudante[a].nota[b] > 10);
         }
         fflush (stdin);
         printf ("\n");
@@ -94,15 +108,15 @@ int main ( ) {
 
     titulo ( );
     for (a = 0; a < MAX_DATA; a++) {
-        printf ("Nome do %d∫ estudante: %s\n\n", a+1, estudante[a].nome);
+        printf ("Nome do %d¬∫ estudante: %s\n\n", a+1, estudante[a].nome);
         printf ("Idade do estudante: %d\n", estudante[a].idade);
         printf ("Nome da disciplina: %s\n", estudante[a].disciplina);
 
         for (b = 0; b < MAX_NOTE; b++) {
-            printf ("%d™ nota: %.2f\n", b+1, estudante[a].nota[b]);
+            printf ("%d¬™ nota: %.2f\n", b+1, estudante[a].nota[b]);
         }
-        printf ("MÈdia: %.2f\n", estudante[a].media_Estudantil);
-        printf ("ClassificaÁ„o da mÈdia: %s\n\n", conceito (estudante[a].media_Estudantil));
+        printf ("M√©dia: %.2f\n", estudante[a].media_Estudantil);
+        printf ("Classifica√ß√£o da m√©dia: %s\n\n", conceito (estudante[a].media_Estudantil));
     }
 
     return 0;
