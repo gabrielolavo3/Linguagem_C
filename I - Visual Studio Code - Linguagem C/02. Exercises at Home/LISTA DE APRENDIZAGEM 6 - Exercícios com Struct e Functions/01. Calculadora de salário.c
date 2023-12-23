@@ -1,7 +1,7 @@
 /* 
-DescriÁ„o  : Por meio de um menu, crie uma calculadora para sal·rio. Com uma struct, armazene as vari·veis necess·rias para ler os dados do usu·rio 
-e, por meio passagem de par‚metro, use funÁıes para efetuar e retornar os c·lculos necess·rios. O menu deve ter opÁıes para novo sal·rio, sal·rio de fÈrias, 
-13∫ sal·rio e sair do programa. Na 1™ opÁ„o, o acrÈscimo È de 15% para atÈ R$ 350; 10% de R$ 351 atÈ R$ 600; e acima de R$ 600, È 5%! (funÁ„o)
+Descri√ß√£o  : Por meio de um menu, crie uma calculadora para sal√°rio. Com uma struct, armazene as vari√°veis necess√°rias para ler os dados do usu√°rio 
+e, por meio passagem de par√¢metro, use fun√ß√µes para efetuar e retornar os c√°lculos necess√°rios. O menu deve ter op√ß√µes para novo sal√°rio, sal√°rio de f√©rias, 
+13¬∫ sal√°rio e sair do programa. Na 1¬™ op√ß√£o, o acr√©scimo √© de 15% para at√© R$ 350; 10% de R$ 351 at√© R$ 600; e acima de R$ 600, √© 5%! (fun√ß√£o)
 Autor(a)   : Gabriel S. Olavo
 Data atual : 23/12/2023 */ 
 
@@ -11,7 +11,7 @@ Data atual : 23/12/2023 */
 #include <time.h>
 #include <locale.h>
 
-// DeclaraÁ„o de funÁıes e struct
+// Declara√ß√£o de fun√ß√µes e struct
 
 struct dados_Trabalhista {
     int meses_Trabalhados;
@@ -21,17 +21,17 @@ struct dados_Trabalhista {
 
 void titulo ( ) {
     system ("cls || clear");
-    printf ("SALARIUM IN BOX! CALCULADORA VIRTUAL DE SAL¡RIOS\n\n");
+    printf ("SALARIUM IN BOX! CALCULADORA VIRTUAL DE SAL√ÅRIOS\n\n");
 }
 
 void mensagem (struct dados_Trabalhista funcionario) {
     if (funcionario.meses_Trabalhados <= 0 || funcionario.meses_Trabalhados > 12) {
-        printf ("\nQuantidade Inv·lida! Insira a quantidade entre 1 e 12\n\n"); }
+        printf ("\nQuantidade Inv√°lida! Insira a quantidade entre 1 e 12\n\n"); }
 }
 
 void erroDe_Salario (struct dados_Trabalhista funcionario) {
     if (funcionario.salario < 1 || funcionario.salario > 80000) {
-        printf ("\nValor Inv·lido! Insira o valor do sal·rio entre R$ 1,00 e R$ 80.000,00\n\n"); }
+        printf ("\nValor Inv√°lido! Insira o valor do sal√°rio entre R$ 1,00 e R$ 80.000,00\n\n"); }
 }
 
 float Novo_salario (struct dados_Trabalhista funcionario) {
@@ -70,7 +70,7 @@ float ferias (struct dados_Trabalhista funcionario) {
 int main ( ) {
     setlocale (LC_ALL, "portuguese");
 
-// DeclaraÁ„o de vari·veis de acesso
+// Declara√ß√£o de vari√°veis de acesso
 
     int menu;
     struct dados_Trabalhista funcionario;
@@ -79,18 +79,18 @@ int main ( ) {
 
     titulo ( );
     do {
-        printf ("Identificador | DescriÁ„o\n");
-        printf ("      1       | AcrÈscimo de sal·rio\n");
-        printf ("      2       | Calculo do sal·rio de fÈrias\n");
-        printf ("      3       | Calculo do 13∫ sal·rio\n");
+        printf ("Identificador | Descri√ß√£o\n");
+        printf ("      1       | Acr√©scimo de sal√°rio\n");
+        printf ("      2       | C√°lculo do sal√°rio de f√©rias\n");
+        printf ("      3       | C√°lculo do 13¬∫ sal√°rio\n");
         printf ("      4       | Encerrar algoritmo\n\n");
-        printf ("Selecione a opÁ„o desejada de acordo com o identificador: ");
+        printf ("Selecione a op√ß√£o desejada de acordo com o identificador: ");
         scanf ("%d", &menu);
         
         switch (menu) {
             case 1:
                 do {
-                    printf ("\nDigite o valor do seu atual sal·rio(em R$): ");
+                    printf ("\nDigite o valor do seu atual sal√°rio(em R$): ");
                     scanf ("%f", &funcionario.salario);
                 
                     erroDe_Salario (funcionario);
@@ -99,13 +99,13 @@ int main ( ) {
                 
                 titulo ( );
                 printf ("Valor do atual salario: R$ %.2f\n", funcionario.salario);
-                printf ("Percentual de acrÈscimo: %s\n", porcentagem_Acrescimo(funcionario));
+                printf ("Percentual de acr√©scimo: %s\n", porcentagem_Acrescimo(funcionario));
                 printf ("Valor do novo salario: R$ %.2f\n\n", funcionario.new_Salario = Novo_salario(funcionario));
             break;
             
             case 2:
                 do {
-                    printf ("\nDigite o valor do seu atual sal·rio(em R$): ");
+                    printf ("\nDigite o valor do seu atual sal√°rio(em R$): ");
                     scanf ("%f", &funcionario.salario);
                     
                     erroDe_Salario (funcionario);
@@ -113,13 +113,13 @@ int main ( ) {
                 } while (funcionario.salario < 1 || funcionario.salario > 80000);
                 
                 titulo ( );
-                printf ("Sal·rio do perÌodo de fÈrias: R$ %.2f\n\n", funcionario.salario_Ferias = ferias(funcionario));
+                printf ("Sal√°rio do per√≠odo de f√©rias: R$ %.2f\n\n", funcionario.salario_Ferias = ferias(funcionario));
             
             break;
             
             case 3:
                 do {
-                    printf ("\nDigite o valor do seu atual sal·rio(em R$): ");
+                    printf ("\nDigite o valor do seu atual sal√°rio(em R$): ");
                     scanf ("%f", &funcionario.salario);
                     
                     erroDe_Salario (funcionario);
@@ -127,7 +127,7 @@ int main ( ) {
                 } while (funcionario.salario < 1 || funcionario.salario > 80000);
 
                 do {
-                    printf ("Digite a quantidade de meses no qual vocÍ trabalhou: ");
+                    printf ("Digite a quantidade de meses no qual voc√™ trabalhou: ");
                     scanf ("%d", &funcionario.meses_Trabalhados);
                     
                     mensagem (funcionario);
@@ -136,16 +136,16 @@ int main ( ) {
 
                 titulo ( );
                 printf ("Valor do atual salario: R$ %.2f\n", funcionario.salario);
-                printf ("Quantidade de meses de serviÁo: %d\n", funcionario.meses_Trabalhados);
-                printf ("Valor do 13∫ sal·rio: R$ %.2f\n\n", funcionario.decimo_Terceiro = Decimo_Terceiro(funcionario));
+                printf ("Quantidade de meses de servi√ßo: %d\n", funcionario.meses_Trabalhados);
+                printf ("Valor do 13¬∫ sal√°rio: R$ %.2f\n\n", funcionario.decimo_Terceiro = Decimo_Terceiro(funcionario));
             break;
             
             case 4:
-                printf ("\nOBRIGADO POR UTILIZAR O SALARIUM IN BOX! AtÈ a prÛxima\n");
+                printf ("\nOBRIGADO POR UTILIZAR O SALARIUM IN BOX! At√© a pr√≥xima\n");
             break;
             
             default:
-                printf ("\nOpÁ„o Inv·lida! Retorne ao menu e selecione uma opÁ„o disponÌvel\n");
+                printf ("\nOp√ß√£o Inv√°lida! Retorne ao menu e selecione uma op√ß√£o dispon√≠vel\n");
                 sleep (2);
                 titulo ( );
             break;
